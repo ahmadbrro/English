@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أساسيات اللغة الإنجليزية</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2310b981'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>AB</text></svg>">
+<link rel="stylesheet" href="css/english-basics.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="index.html" style="width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,0.18);display:grid;place-items:center;font-size:18px;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.3);flex-shrink:0;" title="العودة للرئيسية">🏠</a>
+      <div class="brand-icon">AB</div>
+      <div>
+        <h1>أساسيات اللغة الإنجليزية</h1>
+        <p class="brand-sub">إعداد وتصميم ahmad brro</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-tabs" id="nav-tabs">
+  <button class="nav-tab active" data-section="alphabet">🔤 الأبجدية</button>
+  <button class="nav-tab" data-section="pronouns">👤 الضمائر</button>
+  <button class="nav-tab" data-section="being">🧍 فعل الكون</button>
+  <button class="nav-tab" data-section="possession">🏠 فعل الملك</button>
+  <button class="nav-tab" data-section="action">⚡ فعل العمل</button>
+  <button class="nav-tab" data-section="possessive">📌 الصفة الملكية</button>
+  <button class="nav-tab" data-section="practice">🎯 تدريب</button>
+</nav>
+
+<main>
+
+<!-- ===================== الأبجدية ===================== -->
+<section class="section active" id="sec-alphabet">
+  <div class="section-header">
+    <h2>🔤 الأبجدية الإنجليزية - English Alphabet</h2>
+    <p>اضغط على أي حرف لسماع نطقه الصحيح</p>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="alpha-grid" id="alpha-grid"></div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:16px;">
+    <button class="sound-btn" style="width:auto; border-radius:999px; padding:10px 24px; font-size:15px; font-weight:700; gap:8px;" onclick="speakText('The English Alphabet. A B C D E F G H I J K L M N O P Q R S T U V W X Y Z')">🔊 نطق الأبجدية كاملة</button>
+  </div>
+</section>
+
+<!-- ===================== الضمائر ===================== -->
+<section class="section" id="sec-pronouns">
+  <div class="section-header">
+    <h2>👤 الضمائر الإنجليزية - Pronouns</h2>
+    <p>الضمائر هي كلمات تحل محل الاسم لتجنب التكرار</p>
+  </div>
+
+  <div class="rule-box">
+    <h4>📏 قاعدة مهمة</h4>
+    <p>الضمائر مقسمة إلى نوعين رئيسيين: <b>ضمائر الفاعل (Subject Pronouns)</b> و <b>ضمائر المفعول به (Object Pronouns)</b>. ضمير الفاعل يأتي قبل الفعل، وضمير المفعول به يأتي بعده.</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">🟢 ضمائر الفاعل (Subject Pronouns)</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الضمير</th><th>النطق</th><th>المعنى</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="en-word">I</span></td>
+              <td><span class="en-word-sm">/aɪ/</span></td>
+              <td><span class="ar-word">أنا</span></td>
+              <td><button class="sound-btn" onclick="speak('I')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">You</span></td>
+              <td><span class="en-word-sm">/juː/</span></td>
+              <td><span class="ar-word">أنت / أنتِ / أنتم</span></td>
+              <td><button class="sound-btn" onclick="speak('You')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">He</span></td>
+              <td><span class="en-word-sm">/hiː/</span></td>
+              <td><span class="ar-word">هو</span></td>
+              <td><button class="sound-btn" onclick="speak('He')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">She</span></td>
+              <td><span class="en-word-sm">/ʃiː/</span></td>
+              <td><span class="ar-word">هي</span></td>
+              <td><button class="sound-btn" onclick="speak('She')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">It</span></td>
+              <td><span class="en-word-sm">/ɪt/</span></td>
+              <td><span class="ar-word">هو / هي (لغير العاقل)</span></td>
+              <td><button class="sound-btn" onclick="speak('It')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">We</span></td>
+              <td><span class="en-word-sm">/wiː/</span></td>
+              <td><span class="ar-word">نحن</span></td>
+              <td><button class="sound-btn" onclick="speak('We')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">They</span></td>
+              <td><span class="en-word-sm">/ðeɪ/</span></td>
+              <td><span class="ar-word">هم / هن</span></td>
+              <td><button class="sound-btn" onclick="speak('They')">🔊</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">🔵 ضمائر المفعول به (Object Pronouns)</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الضمير</th><th>النطق</th><th>المعنى</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="en-word">Me</span></td>
+              <td><span class="en-word-sm">/miː/</span></td>
+              <td><span class="ar-word">أنا (كمفعول)</span></td>
+              <td><button class="sound-btn" onclick="speak('Me')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">You</span></td>
+              <td><span class="en-word-sm">/juː/</span></td>
+              <td><span class="ar-word">أنت /ك (كمفعول)</span></td>
+              <td><button class="sound-btn" onclick="speak('You')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">Him</span></td>
+              <td><span class="en-word-sm">/hɪm/</span></td>
+              <td><span class="ar-word">هو (كمفعول)</span></td>
+              <td><button class="sound-btn" onclick="speak('Him')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">Her</span></td>
+              <td><span class="en-word-sm">/hɜːr/</span></td>
+              <td><span class="ar-word">هي (كمفعول)</span></td>
+              <td><button class="sound-btn" onclick="speak('Her')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">It</span></td>
+              <td><span class="en-word-sm">/ɪt/</span></td>
+              <td><span class="ar-word">هو/هي غير العاقل</span></td>
+              <td><button class="sound-btn" onclick="speak('It')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">Us</span></td>
+              <td><span class="en-word-sm">/ʌs/</span></td>
+              <td><span class="ar-word">نحن (كمفعول)</span></td>
+              <td><button class="sound-btn" onclick="speak('Us')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">Them</span></td>
+              <td><span class="en-word-sm">/ðɛm/</span></td>
+              <td><span class="ar-word">هم (كمفعول)</span></td>
+              <td><button class="sound-btn" onclick="speak('Them')">🔊</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">💡 أمثلة توضيحية</div>
+    <div class="card-body">
+      <table class="lesson-table">
+        <thead><tr><th>الجملة الإنجليزية</th><th>الترجمة</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="example-sentence">I love you.</td>
+            <td><span class="ar-word">أنا أحبك.</span></td>
+            <td><button class="sound-btn" onclick="speak('I love you')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="example-sentence">She told him the truth.</td>
+            <td><span class="ar-word">هي أخبرته بالحقيقة.</span></td>
+            <td><button class="sound-btn" onclick="speak('She told him the truth')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="example-sentence">We saw them at the park.</td>
+            <td><span class="ar-word">رأيناهم في الحديقة.</span></td>
+            <td><button class="sound-btn" onclick="speak('We saw them at the park')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="example-sentence">Can you help me?</td>
+            <td><span class="ar-word">هل يمكنك مساعدتي؟</span></td>
+            <td><button class="sound-btn" onclick="speak('Can you help me')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== فعل الكون ===================== -->
+<section class="section" id="sec-being">
+  <div class="section-header">
+    <h2>🧍 فعل الكون - Being Verbs (To Be)</h2>
+    <p>يُستخدم للوصف أو التحديد أو السكن</p>
+  </div>
+
+  <div class="rule-box">
+    <h4>📏 قاعدة فعل الكون (To Be)</h4>
+    <p>يتم تconjugação حسب الضمير:<br>
+    <b>I → am</b> | <b>He / She / It → is</b> | <b>You / We / They → are</b><br>
+    في الماضي: <b>I / He / She / It → was</b> | <b>You / We / They → were</b></p>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header"><span class="type-badge being">Present</span> الحاضر - am / is / are</div>
+    <div class="card-body">
+      <table class="lesson-table">
+        <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال</th><th>الترجمة</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="en-word">I</span></td>
+            <td><span class="en-word">am</span></td>
+            <td class="example-sentence">I am a student.</td>
+            <td><span class="ar-word">أنا طالب.</span></td>
+            <td><button class="sound-btn" onclick="speak('I am a student')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">He</span></td>
+            <td><span class="en-word">is</span></td>
+            <td class="example-sentence">He is tall.</td>
+            <td><span class="ar-word">هو طويل.</span></td>
+            <td><button class="sound-btn" onclick="speak('He is tall')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">She</span></td>
+            <td><span class="en-word">is</span></td>
+            <td class="example-sentence">She is beautiful.</td>
+            <td><span class="ar-word">هي جميلة.</span></td>
+            <td><button class="sound-btn" onclick="speak('She is beautiful')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">It</span></td>
+            <td><span class="en-word">is</span></td>
+            <td class="example-sentence">It is cold outside.</td>
+            <td><span class="ar-word">الجو بارد في الخارج.</span></td>
+            <td><button class="sound-btn" onclick="speak('It is cold outside')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">You</span></td>
+            <td><span class="en-word">are</span></td>
+            <td class="example-sentence">You are my friend.</td>
+            <td><span class="ar-word">أنت صديقي.</span></td>
+            <td><button class="sound-btn" onclick="speak('You are my friend')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">We</span></td>
+            <td><span class="en-word">are</span></td>
+            <td class="example-sentence">We are happy.</td>
+            <td><span class="ar-word">نحن سعداء.</span></td>
+            <td><button class="sound-btn" onclick="speak('We are happy')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">They</span></td>
+            <td><span class="en-word">are</span></td>
+            <td class="example-sentence">They are doctors.</td>
+            <td><span class="ar-word">هم أطباء.</span></td>
+            <td><button class="sound-btn" onclick="speak('They are doctors')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header"><span class="type-badge being">Past</span> الماضي - was / were</div>
+    <div class="card-body">
+      <table class="lesson-table">
+        <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال</th><th>الترجمة</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="en-word">I</span></td>
+            <td><span class="en-word">was</span></td>
+            <td class="example-sentence">I was tired yesterday.</td>
+            <td><span class="ar-word">كنت متعباً بالأمس.</span></td>
+            <td><button class="sound-btn" onclick="speak('I was tired yesterday')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">He / She / It</span></td>
+            <td><span class="en-word">was</span></td>
+            <td class="example-sentence">She was at home.</td>
+            <td><span class="ar-word">كانت في المنزل.</span></td>
+            <td><button class="sound-btn" onclick="speak('She was at home')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">You / We / They</span></td>
+            <td><span class="en-word">were</span></td>
+            <td class="example-sentence">They were at school.</td>
+            <td><span class="ar-word">كانوا في المدرسة.</span></td>
+            <td><button class="sound-btn" onclick="speak('They were at school')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="type-badge being">Negative</span> النفي - am not / isn't / aren't / wasn't / weren't</div>
+    <div class="card-body">
+      <table class="lesson-table">
+        <thead><tr><th>الإيجابي</th><th>النفي</th><th>مثال</th><th></th></tr></thead>
+        <tbody>
+          <tr><td class="example-sentence">I am happy.</td><td><span class="en-word">I am not happy.</span></td><td><span class="ar-word">أنا لست سعيداً.</span></td><td><button class="sound-btn" onclick="speak('I am not happy')">🔊</button></td></tr>
+          <tr><td class="example-sentence">He is here.</td><td><span class="en-word">He isn't here.</span></td><td><span class="ar-word">هو ليس هنا.</span></td><td><button class="sound-btn" onclick="speak('He is not here')">🔊</button></td></tr>
+          <tr><td class="example-sentence">They are ready.</td><td><span class="en-word">They aren't ready.</span></td><td><span class="ar-word">هم ليسوا جاهزين.</span></td><td><button class="sound-btn" onclick="speak('They are not ready')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== فعل الملك ===================== -->
+<section class="section" id="sec-possession">
+  <div class="section-header">
+    <h2>🏠 فعل الملك - Possession Verbs (Have / Has / Had)</h2>
+    <p>يُستخدم للتعبير عنPossession أو dimiliki</p>
+  </div>
+
+  <div class="rule-box">
+    <h4>📏 قاعدة فعل الملك</h4>
+    <p><b>الحاضر:</b> I / You / We / They → <b>have</b> | He / She / It → <b>has</b><br>
+    <b>الماضي:</b> جميع الضمائر → <b>had</b><br>
+    <b>النفي:</b> doesn't have / don't have / didn't have</p>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header"><span class="type-badge possession">Present</span> الحاضر - have / has</div>
+    <div class="card-body">
+      <table class="lesson-table">
+        <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال</th><th>الترجمة</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="en-word">I</span></td>
+            <td><span class="en-word">have</span></td>
+            <td class="example-sentence">I have two brothers.</td>
+            <td><span class="ar-word">لديّ أخان.</span></td>
+            <td><button class="sound-btn" onclick="speak('I have two brothers')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">You</span></td>
+            <td><span class="en-word">have</span></td>
+            <td class="example-sentence">You have a beautiful house.</td>
+            <td><span class="ar-word">لديك منزل جميل.</span></td>
+            <td><button class="sound-btn" onclick="speak('You have a beautiful house')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">He</span></td>
+            <td><span class="en-word">has</span></td>
+            <td class="example-sentence">He has a new car.</td>
+            <td><span class="ar-word">لديه سيارة جديدة.</span></td>
+            <td><button class="sound-btn" onclick="speak('He has a new car')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">She</span></td>
+            <td><span class="en-word">has</span></td>
+            <td class="example-sentence">She has green eyes.</td>
+            <td><span class="ar-word">لديها عيون خضراء.</span></td>
+            <td><button class="sound-btn" onclick="speak('She has green eyes')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">It</span></td>
+            <td><span class="en-word">has</span></td>
+            <td class="example-sentence">It has four legs.</td>
+            <td><span class="ar-word">لديه أربع قوائم.</span></td>
+            <td><button class="sound-btn" onclick="speak('It has four legs')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">We</span></td>
+            <td><span class="en-word">have</span></td>
+            <td class="example-sentence">We have a lot of friends.</td>
+            <td><span class="ar-word">لدينا الكثير من الأصدقاء.</span></td>
+            <td><button class="sound-btn" onclick="speak('We have a lot of friends')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">They</span></td>
+            <td><span class="en-word">have</span></td>
+            <td class="example-sentence">They have three children.</td>
+            <td><span class="ar-word">لديهم ثلاثة أطفال.</span></td>
+            <td><button class="sound-btn" onclick="speak('They have three children')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header"><span class="type-badge possession">Past</span> الماضي - had</div>
+    <div class="card-body">
+      <table class="lesson-table">
+        <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال</th><th>الترجمة</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="en-word">I / You / He / She / We / They</span></td>
+            <td><span class="en-word">had</span></td>
+            <td class="example-sentence">I had a great time.</td>
+            <td><span class="ar-word">قضيت وقتاً رائعاً.</span></td>
+            <td><button class="sound-btn" onclick="speak('I had a great time')">🔊</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td class="example-sentence">She had a headache.</td>
+            <td><span class="ar-word">كانت تعاني من صداع.</span></td>
+            <td><button class="sound-btn" onclick="speak('She had a headache')">🔊</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td class="example-sentence">They had no money.</td>
+            <td><span class="ar-word">لم يكن لديهم مال.</span></td>
+            <td><button class="sound-btn" onclick="speak('They had no money')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">📝 الفرق بين have للملكية و have لل experiencing</div>
+    <div class="card-body">
+      <table class="lesson-table">
+        <thead><tr><th>النوع</th><th>المعنى</th><th>مثال</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="type-badge possession">ملكية</span></td>
+            <td><span class="ar-word">امتلاك شيء</span></td>
+            <td class="example-sentence">I have a book.</td>
+            <td><button class="sound-btn" onclick="speak('I have a book')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="type-badge being">تجربة</span></td>
+            <td><span class="ar-word">التعرض لموقف</span></td>
+            <td class="example-sentence">I have breakfast at 8.</td>
+            <td><button class="sound-btn" onclick="speak('I have breakfast at eight')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="type-badge action">فعل مساعد</span></td>
+            <td><span class="ar-word">تصريف الفعل المساعد</span></td>
+            <td class="example-sentence">I have finished my work.</td>
+            <td><button class="sound-btn" onclick="speak('I have finished my work')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== فعل العمل ===================== -->
+<section class="section" id="sec-action">
+  <div class="section-header">
+    <h2>⚡ فعل العمل - Action Verbs</h2>
+    <p>الأفعال التي تدل على حركة أو نشاط</p>
+  </div>
+
+  <div class="rule-box">
+    <h4>📏 قاعدة مهمة</h4>
+    <p>فعل العمل هو الفعل الذي يدل على حركة جسدية أو نشاط ذهني. يختلف عن فعل الكون وفعل الملك في أنه يعبر عن فعل حقيقي وليس مجرد وصف أو ملكية.</p>
+  </div>
+
+  <!-- ===== do / does / did ===== -->
+  <div>
+    <div class="section-header" style="margin-bottom:0;">
+      <h2>🛠️ فعل المساعد do / does / did</h2>
+      <p>يُستخدم لتفعيل الجمل الإيجابية والنفيية والسؤالية</p>
+    </div>
+
+    <div class="rule-box" style="margin-top:20px;">
+      <h4>📏 قواعد فعل المساعد do</h4>
+      <p>
+        <b>do</b> → أنتَ / أنا / نحن / هم (في الحاضر)<br>
+        <b>does</b> → هو / هي (في الحاضر فقط - مع الغائب المفرد)<br>
+        <b>did</b> → جميع الضمائر في الماضي (أنا / أنتَ / هو / هي / نحن / هم)
+      </p>
+    </div>
+
+    <!-- الحاضر -->
+    <div class="card" style="margin-top:20px;">
+      <div class="card-header"><span class="type-badge action">Present</span> الحاضر - do / does</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال (إيجابي)</th><th>مثال (نفي)</th><th>مثال (سؤال)</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="en-word">I</span></td>
+              <td><span class="en-word">do</span></td>
+              <td class="example-sentence">I do my homework.</td>
+              <td class="example-sentence">I don't do my homework.</td>
+              <td class="example-sentence">Do I do my homework?</td>
+              <td><button class="sound-btn" onclick="speak('I do my homework. I don\'t do my homework. Do I do my homework?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">You</span></td>
+              <td><span class="en-word">do</span></td>
+              <td class="example-sentence">You do your job well.</td>
+              <td class="example-sentence">You don't do your job well.</td>
+              <td class="example-sentence">Do you do your job well?</td>
+              <td><button class="sound-btn" onclick="speak('You do your job well. You don\'t do your job well. Do you do your job well?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">He</span></td>
+              <td><span class="en-word">does</span></td>
+              <td class="example-sentence">He does the dishes.</td>
+              <td class="example-sentence">He doesn't do the dishes.</td>
+              <td class="example-sentence">Does he do the dishes?</td>
+              <td><button class="sound-btn" onclick="speak('He does the dishes. He doesn\'t do the dishes. Does he do the dishes?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">She</span></td>
+              <td><span class="en-word">does</span></td>
+              <td class="example-sentence">She does exercise daily.</td>
+              <td class="example-sentence">She doesn't do exercise.</td>
+              <td class="example-sentence">Does she do exercise?</td>
+              <td><button class="sound-btn" onclick="speak('She does exercise daily. She doesn\'t do exercise. Does she do exercise?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">We</span></td>
+              <td><span class="en-word">do</span></td>
+              <td class="example-sentence">We do our best.</td>
+              <td class="example-sentence">We don't do our best.</td>
+              <td class="example-sentence">Do we do our best?</td>
+              <td><button class="sound-btn" onclick="speak('We do our best. We don\'t do our best. Do we do our best?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">They</span></td>
+              <td><span class="en-word">do</span></td>
+              <td class="example-sentence">They do the work.</td>
+              <td class="example-sentence">They don't do the work.</td>
+              <td class="example-sentence">Do they do the work?</td>
+              <td><button class="sound-btn" onclick="speak('They do the work. They don\'t do the work. Do they do the work?')">🔊</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- الماضي -->
+    <div class="card" style="margin-top:20px;">
+      <div class="card-header"><span class="type-badge being">Past</span> الماضي - did</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال (إيجابي)</th><th>مثال (نفي)</th><th>مثال (سؤال)</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="en-word">I / You / We / They</span></td>
+              <td><span class="en-word">did</span></td>
+              <td class="example-sentence">I did my homework yesterday.</td>
+              <td class="example-sentence">I didn't do my homework.</td>
+              <td class="example-sentence">Did I do my homework?</td>
+              <td><button class="sound-btn" onclick="speak('I did my homework yesterday. I didn\'t do my homework. Did I do my homework?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">He / She / It</span></td>
+              <td><span class="en-word">did</span></td>
+              <td class="example-sentence">She did the laundry.</td>
+              <td class="example-sentence">She didn't do the laundry.</td>
+              <td class="example-sentence">Did she do the laundry?</td>
+              <td><button class="sound-btn" onclick="speak('She did the laundry. She didn\'t do the laundry. Did she do the laundry?')">🔊</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- أمثلة مهمة -->
+    <div class="card" style="margin-top:20px;">
+      <div class="card-header">💡 أمثلة مهمة لاستخدام do / does / did</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>النوع</th><th>الجملة</th><th>الترجمة</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="type-badge action">نفي</span></td>
+              <td class="example-sentence">I don't like coffee.</td>
+              <td><span class="ar-word">أنا لا أحب القهوة.</span></td>
+              <td><button class="sound-btn" onclick="speak('I don\'t like coffee')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="type-badge action">نفي</span></td>
+              <td class="example-sentence">He doesn't speak Arabic.</td>
+              <td><span class="ar-word">هو لا يتحدث العربية.</span></td>
+              <td><button class="sound-btn" onclick="speak('He doesn\'t speak Arabic')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="type-badge being">نفي ماضي</span></td>
+              <td class="example-sentence">She didn't go to school.</td>
+              <td><span class="ar-word">هي لم تذهب إلى المدرسة.</span></td>
+              <td><button class="sound-btn" onclick="speak('She didn\'t go to school')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="type-badge possession">سؤال</span></td>
+              <td class="example-sentence">Do you speak English?</td>
+              <td><span class="ar-word">هل تتحدث الإنجليزية؟</span></td>
+              <td><button class="sound-btn" onclick="speak('Do you speak English?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="type-badge possession">سؤال</span></td>
+              <td class="example-sentence">Does she work here?</td>
+              <td><span class="ar-word">هل تعمل هنا؟</span></td>
+              <td><button class="sound-btn" onclick="speak('Does she work here?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="type-badge being">سؤال ماضي</span></td>
+              <td class="example-sentence">Did they finish the project?</td>
+              <td><span class="ar-word">هل أنهوا المشروع؟</span></td>
+              <td><button class="sound-btn" onclick="speak('Did they finish the project?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="type-badge action">تأكيد</span></td>
+              <td class="example-sentence">I do love you!</td>
+              <td><span class="ar-word">أنا أحبك حقاً!</span></td>
+              <td><button class="sound-btn" onclick="speak('I do love you')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="type-badge action">تأكيد</span></td>
+              <td class="example-sentence">She does care about you.</td>
+              <td><span class="ar-word">هي تهتم بك حقاً.</span></td>
+              <td><button class="sound-btn" onclick="speak('She does care about you')">🔊</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ملخص سريع -->
+    <div class="card" style="margin-top:20px;">
+      <div class="card-header">📋 ملخص سريع - do / does / did</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الزمن</th><th>الضمير</th><th>الإيجابي</th><th>النفي</th><th>السؤال</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td rowspan="4" style="font-weight:800; color:var(--green-dark);">الحاضر</td>
+              <td><span class="en-word">I / You / We / They</span></td>
+              <td><span class="en-word">do</span></td>
+              <td><span class="en-word">don't</span></td>
+              <td><span class="en-word">Do ... ?</span></td>
+              <td><button class="sound-btn" onclick="speak('do, don\'t, do you?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td><span class="en-word">He / She / It</span></td>
+              <td><span class="en-word">does</span></td>
+              <td><span class="en-word">doesn't</span></td>
+              <td><span class="en-word">Does ... ?</span></td>
+              <td><button class="sound-btn" onclick="speak('does, doesn\'t, does he?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td colspan="5" style="color:var(--text-muted); font-size:13px;">
+                ⚠️ مع does لا نضع s للفعل الرئيسي: He <b>does</b> work (وليس He does works)
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="5" style="color:var(--text-muted); font-size:13px;">
+                ⚠️ في النفي: doesn't + الفعل الأساسي: She <b>doesn't play</b> (وليس She doesn't plays)
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td rowspan="2" style="font-weight:800; color:var(--primary-dark);">الماضي</td>
+              <td><span class="en-word">جميع الضمائر</span></td>
+              <td><span class="en-word">did</span></td>
+              <td><span class="en-word">didn't</span></td>
+              <td><span class="en-word">Did ... ?</span></td>
+              <td><button class="sound-btn" onclick="speak('did, didn\'t, did you?')">🔊</button></td>
+            </tr>
+            <tr>
+              <td colspan="5" style="color:var(--text-muted); font-size:13px;">
+                ⚠️ مع did الفعل يبقى في صورته الأساسية: She <b>did play</b> (وليس She did played)
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== الأفعال التالية ===== -->
+  <div style="margin-top:36px;">
+    <div class="section-header" style="margin-bottom:0;">
+      <h2>📖 الأفعال التالية</h2>
+      <p>تصنيفات الأفعال الإضافية مع أمثلة</p>
+    </div>
+  </div>
+
+  <div class="grid-3" style="margin-top:20px;">
+    <!-- أفعال الحركة -->
+    <div class="card">
+      <div class="card-header">🚶 أفعال الحركة - Movement</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الفعل</th><th>المعنى</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><span class="en-word">Go</span></td><td><span class="ar-word">يذهب</span></td><td><button class="sound-btn" onclick="speak('Go')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Come</span></td><td><span class="ar-word">يأتي</span></td><td><button class="sound-btn" onclick="speak('Come')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Walk</span></td><td><span class="ar-word">يمشي</span></td><td><button class="sound-btn" onclick="speak('Walk')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Run</span></td><td><span class="ar-word">يركض</span></td><td><button class="sound-btn" onclick="speak('Run')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Jump</span></td><td><span class="ar-word">يقفز</span></td><td><button class="sound-btn" onclick="speak('Jump')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Sit</span></td><td><span class="ar-word">يجلس</span></td><td><button class="sound-btn" onclick="speak('Sit')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Stand</span></td><td><span class="ar-word">يقف</span></td><td><button class="sound-btn" onclick="speak('Stand')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Fly</span></td><td><span class="ar-word">يطير</span></td><td><button class="sound-btn" onclick="speak('Fly')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Swim</span></td><td><span class="ar-word">يسبح</span></td><td><button class="sound-btn" onclick="speak('Swim')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Drive</span></td><td><span class="ar-word">يقود</span></td><td><button class="sound-btn" onclick="speak('Drive')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- أفعال الإدراك -->
+    <div class="card">
+      <div class="card-header">👁 أفعال الإدراك - Perception</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الفعل</th><th>المعنى</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><span class="en-word">See</span></td><td><span class="ar-word">يرى</span></td><td><button class="sound-btn" onclick="speak('See')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Look</span></td><td><span class="ar-word">ينظر</span></td><td><button class="sound-btn" onclick="speak('Look')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Watch</span></td><td><span class="ar-word">يشاهد</span></td><td><button class="sound-btn" onclick="speak('Watch')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Listen</span></td><td><span class="ar-word">يسمع</span></td><td><button class="sound-btn" onclick="speak('Listen')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Hear</span></td><td><span class="ar-word">يسمع (بشكل طبيعي)</span></td><td><button class="sound-btn" onclick="speak('Hear')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Feel</span></td><td><span class="ar-word">يشعر</span></td><td><button class="sound-btn" onclick="speak('Feel')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Touch</span></td><td><span class="ar-word">يلمس</span></td><td><button class="sound-btn" onclick="speak('Touch')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Smell</span></td><td><span class="ar-word">يشم</span></td><td><button class="sound-btn" onclick="speak('Smell')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Taste</span></td><td><span class="ar-word">يتذوق</span></td><td><button class="sound-btn" onclick="speak('Taste')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- أفعال التواصل -->
+    <div class="card">
+      <div class="card-header">💬 أفعال التواصل - Communication</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الفعل</th><th>المعنى</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><span class="en-word">Say</span></td><td><span class="ar-word">يقول</span></td><td><button class="sound-btn" onclick="speak('Say')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Tell</span></td><td><span class="ar-word">يخبر</span></td><td><button class="sound-btn" onclick="speak('Tell')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Ask</span></td><td><span class="ar-word">يسأل</span></td><td><button class="sound-btn" onclick="speak('Ask')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Talk</span></td><td><span class="ar-word">يتحدث</span></td><td><button class="sound-btn" onclick="speak('Talk')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Speak</span></td><td><span class="ar-word">يتكلم</span></td><td><button class="sound-btn" onclick="speak('Speak')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Write</span></td><td><span class="ar-word">يكتب</span></td><td><button class="sound-btn" onclick="speak('Write')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Read</span></td><td><span class="ar-word">يقرأ</span></td><td><button class="sound-btn" onclick="speak('Read')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Call</span></td><td><span class="ar-word">يتصل</span></td><td><button class="sound-btn" onclick="speak('Call')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Sing</span></td><td><span class="ar-word">يغني</span></td><td><button class="sound-btn" onclick="speak('Sing')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- أفعال العمل والنشاط -->
+    <div class="card">
+      <div class="card-header">💪 أفعال العمل والنشاط - Work</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الفعل</th><th>المعنى</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><span class="en-word">Work</span></td><td><span class="ar-word">يعمل</span></td><td><button class="sound-btn" onclick="speak('Work')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Study</span></td><td><span class="ar-word">يدرس</span></td><td><button class="sound-btn" onclick="speak('Study')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Learn</span></td><td><span class="ar-word">يتعلم</span></td><td><button class="sound-btn" onclick="speak('Learn')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Teach</span></td><td><span class="ar-word">يعلم</span></td><td><button class="sound-btn" onclick="speak('Teach')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Cook</span></td><td><span class="ar-word">يطبخ</span></td><td><button class="sound-btn" onclick="speak('Cook')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Build</span></td><td><span class="ar-word">يبني</span></td><td><button class="sound-btn" onclick="speak('Build')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Buy</span></td><td><span class="ar-word">يشتري</span></td><td><button class="sound-btn" onclick="speak('Buy')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Sell</span></td><td><span class="ar-word">يبيع</span></td><td><button class="sound-btn" onclick="speak('Sell')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Open</span></td><td><span class="ar-word">يفتح</span></td><td><button class="sound-btn" onclick="speak('Open')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Close</span></td><td><span class="ar-word">يغلق</span></td><td><button class="sound-btn" onclick="speak('Close')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- أفعال الأكل والشرب -->
+    <div class="card">
+      <div class="card-header">🍽 أفعال الأكل والشرب</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الفعل</th><th>المعنى</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><span class="en-word">Eat</span></td><td><span class="ar-word">يأكل</span></td><td><button class="sound-btn" onclick="speak('Eat')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Drink</span></td><td><span class="ar-word">يشرب</span></td><td><button class="sound-btn" onclick="speak('Drink')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Break</span></td><td><span class="ar-word">يكسر</span></td><td><button class="sound-btn" onclick="speak('Break')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Make</span></td><td><span class="ar-word">يصنع / يفعل</span></td><td><button class="sound-btn" onclick="speak('Make')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Give</span></td><td><span class="ar-word">يعطي</span></td><td><button class="sound-btn" onclick="speak('Give')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Take</span></td><td><span class="ar-word">يأخذ</span></td><td><button class="sound-btn" onclick="speak('Take')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Put</span></td><td><span class="ar-word">يضع</span></td><td><button class="sound-btn" onclick="speak('Put')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Keep</span></td><td><span class="ar-word">يحافظ على</span></td><td><button class="sound-btn" onclick="speak('Keep')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Get</span></td><td><span class="ar-word">يحصل على</span></td><td><button class="sound-btn" onclick="speak('Get')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Find</span></td><td><span class="ar-word">يجد</span></td><td><button class="sound-btn" onclick="speak('Find')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- أفعال المشاعر -->
+    <div class="card">
+      <div class="card-header">❤️ أفعال المشاعر والדעות</div>
+      <div class="card-body">
+        <table class="lesson-table">
+          <thead><tr><th>الفعل</th><th>المعنى</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><span class="en-word">Love</span></td><td><span class="ar-word">يحب</span></td><td><button class="sound-btn" onclick="speak('Love')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Like</span></td><td><span class="ar-word">يحب / يعجبه</span></td><td><button class="sound-btn" onclick="speak('Like')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Want</span></td><td><span class="ar-word">يريد</span></td><td><button class="sound-btn" onclick="speak('Want')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Need</span></td><td><span class="ar-word">يحتاج</span></td><td><button class="sound-btn" onclick="speak('Need')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Think</span></td><td><span class="ar-word">يفكر</span></td><td><button class="sound-btn" onclick="speak('Think')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Know</span></td><td><span class="ar-word">يعرف</span></td><td><button class="sound-btn" onclick="speak('Know')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Understand</span></td><td><span class="ar-word">يفهم</span></td><td><button class="sound-btn" onclick="speak('Understand')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Remember</span></td><td><span class="ar-word">يتذكر</span></td><td><button class="sound-btn" onclick="speak('Remember')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Forget</span></td><td><span class="ar-word">ينسى</span></td><td><button class="sound-btn" onclick="speak('Forget')">🔊</button></td></tr>
+            <tr><td><span class="en-word">Hope</span></td><td><span class="ar-word">يرجو / يتمنى</span></td><td><button class="sound-btn" onclick="speak('Hope')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== الصفة الملكية ===================== -->
+<section class="section" id="sec-possessive">
+  <div class="section-header">
+    <h2>📌 الصفة الملكية - Possessive Adjectives</h2>
+    <p>تستخدم للتعبير عن الملكية وتأتي دائماً قبل الاسم</p>
+  </div>
+
+  <div class="rule-box">
+    <h4>📏 قاعدة الصفة الملكية</h4>
+    <p>الصفة الملكية تأتي <b>قبل الاسم</b> وتوافق اسم الملك.<br>
+    تختلف عن ضمير الملك (Possessive Pronoun) الذي يأتي <b>بدون اسم بعده</b>.</p>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">📋 جدول الصفة الملكية vs ضمير الملك</div>
+    <div class="card-body">
+      <table class="lesson-table">
+        <thead><tr><th>الضمير</th><th>الصفة الملكية</th><th>ضمير الملك</th><th>مثال (صفة ملكية)</th><th>مثال (ضمير ملك)</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="en-word">I</span></td>
+            <td><span class="en-word">My</span></td>
+            <td><span class="en-word">Mine</span></td>
+            <td class="example-sentence">This is my book.</td>
+            <td class="example-sentence">This book is mine.</td>
+            <td><button class="sound-btn" onclick="speak('This is my book. This book is mine.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">You</span></td>
+            <td><span class="en-word">Your</span></td>
+            <td><span class="en-word">Yours</span></td>
+            <td class="example-sentence">Where is your phone?</td>
+            <td class="example-sentence">Is this phone yours?</td>
+            <td><button class="sound-btn" onclick="speak('Where is your phone? Is this phone yours?')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">He</span></td>
+            <td><span class="en-word">His</span></td>
+            <td><span class="en-word">His</span></td>
+            <td class="example-sentence">That is his car.</td>
+            <td class="example-sentence">That car is his.</td>
+            <td><button class="sound-btn" onclick="speak('That is his car. That car is his.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">She</span></td>
+            <td><span class="en-word">Her</span></td>
+            <td><span class="en-word">Hers</span></td>
+            <td class="example-sentence">This is her dress.</td>
+            <td class="example-sentence">This dress is hers.</td>
+            <td><button class="sound-btn" onclick="speak('This is her dress. This dress is hers.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">It</span></td>
+            <td><span class="en-word">Its</span></td>
+            <td><span class="en-word">Its</span></td>
+            <td class="example-sentence">The cat licked its paw.</td>
+            <td class="example-sentence">—</td>
+            <td><button class="sound-btn" onclick="speak('The cat licked its paw.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">We</span></td>
+            <td><span class="en-word">Our</span></td>
+            <td><span class="en-word">Ours</span></td>
+            <td class="example-sentence">This is our house.</td>
+            <td class="example-sentence">This house is ours.</td>
+            <td><button class="sound-btn" onclick="speak('This is our house. This house is ours.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span class="en-word">They</span></td>
+            <td><span class="en-word">Their</span></td>
+            <td><span class="en-word">Theirs</span></td>
+            <td class="example-sentence">That is their garden.</td>
+            <td class="example-sentence">That garden is theirs.</td>
+            <td><button class="sound-btn" onclick="speak('That is their garden. That garden is theirs.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">💡 أمثلة مهمة</div>
+    <div class="card-body">
+      <table class="lesson-table">
+        <thead><tr><th>الجملة</th><th>الترجمة</th><th>ملاحظة</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="example-sentence">I love my family.</td>
+            <td><span class="ar-word">أنا أحب عائلتي.</span></td>
+            <td><span class="ar-word">my = قبل الاسم</span></td>
+            <td><button class="sound-btn" onclick="speak('I love my family')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="example-sentence">She washes her hands.</td>
+            <td><span class="ar-word">تغسل يديها.</span></td>
+            <td><span class="ar-word">her = قبل الاسم</span></td>
+            <td><button class="sound-btn" onclick="speak('She washes her hands')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="example-sentence">They lost their keys.</td>
+            <td><span class="ar-word">فقدوا مفاتيحتهم.</span></td>
+            <td><span class="ar-word">their = قبل الاسم</span></td>
+            <td><button class="sound-btn" onclick="speak('They lost their keys')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="example-sentence">We are doing our homework.</td>
+            <td><span class="ar-word">نفعل واجبنا المدرسي.</span></td>
+            <td><span class="ar-word">our = قبل الاسم</span></td>
+            <td><button class="sound-btn" onclick="speak('We are doing our homework')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="example-sentence">The dog wagged its tail.</td>
+            <td><span class="ar-word">لوى الكلب ذيله.</span></td>
+            <td><span class="ar-word">its = للحيوان (لا تضع شرطة)</span></td>
+            <td><button class="sound-btn" onclick="speak('The dog wagged its tail')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== تدريب تفاعلي ===================== -->
+<section class="section" id="sec-practice">
+  <div class="section-header">
+    <h2>🎯 تدريب تفاعلي - Practice</h2>
+    <p>اختبر معلوماتك في أساسيات اللغة الإنجليزية</p>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">🧩 أكمل الجملة - اختر الفعل الصحيح</div>
+      <div class="card-body">
+        <div id="quiz-area-1">
+          <div id="quiz-question-1" style="font-size:22px; font-weight:800; text-align:center; margin-bottom:16px; direction:ltr;"></div>
+          <div id="quiz-options-1" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;"></div>
+          <div id="quiz-feedback-1" style="text-align:center; margin-top:14px; font-weight:700; min-height:24px;"></div>
+          <button id="btn-next-1" class="sound-btn" style="width:auto; border-radius:999px; padding:10px 24px; font-size:14px; font-weight:700; margin:14px auto 0; display:none;" onclick="nextQuiz1()">السؤال التالي →</button>
+        </div>
+        <div id="quiz-result-1" style="display:none; text-align:center; padding:20px;">
+          <div style="font-size:48px; margin-bottom:8px;" id="result-emoji-1"></div>
+          <div style="font-size:20px; font-weight:800;" id="result-text-1"></div>
+          <button class="sound-btn" style="width:auto; border-radius:999px; padding:10px 24px; font-size:14px; font-weight:700; margin-top:14px;" onclick="startQuiz1()">🔄 أعد الاختبار</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">📝 ترجم الجملة - اختر الترجمة الصحيحة</div>
+      <div class="card-body">
+        <div id="quiz-area-2">
+          <div id="quiz-question-2" style="font-size:22px; font-weight:800; text-align:center; margin-bottom:16px; direction:ltr;"></div>
+          <div id="quiz-options-2" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;"></div>
+          <div id="quiz-feedback-2" style="text-align:center; margin-top:14px; font-weight:700; min-height:24px;"></div>
+          <button id="btn-next-2" class="sound-btn" style="width:auto; border-radius:999px; padding:10px 24px; font-size:14px; font-weight:700; margin:14px auto 0; display:none;" onclick="nextQuiz2()">السؤال التالي →</button>
+        </div>
+        <div id="quiz-result-2" style="display:none; text-align:center; padding:20px;">
+          <div style="font-size:48px; margin-bottom:8px;" id="result-emoji-2"></div>
+          <div style="font-size:20px; font-weight:800;" id="result-text-2"></div>
+          <button class="sound-btn" style="width:auto; border-radius:999px; padding:10px 24px; font-size:14px; font-weight:700; margin-top:14px;" onclick="startQuiz2()">🔄 أعد الاختبار</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="app-footer">
+  إعداد وتصميم ahmad brro
+</footer>
+
+<script src="js/english-basics.js"></script>
+
+</body>
+</html>

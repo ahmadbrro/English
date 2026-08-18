@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الأزمنة في اللغة الإنجليزية</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%238b5cf6'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>⏱</text></svg>">
+<link rel="stylesheet" href="css/english-tenses.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="index.html" style="width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,0.18);display:grid;place-items:center;font-size:18px;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.3);flex-shrink:0;" title="العودة للرئيسية">🏠</a>
+      <div class="brand-icon">⏱</div>
+      <div>
+        <h1>الأزمنة في اللغة الإنجليزية</h1>
+        <p class="brand-sub">إعداد وتصميم ahmad brro</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-tabs" id="nav-tabs">
+  <button class="nav-tab past active" data-section="past-simple">الماضي البسيط</button>
+  <button class="nav-tab past" data-section="past-continuous">الماضي المستمر</button>
+  <button class="nav-tab past" data-section="past-perfect">الماضي التام</button>
+  <button class="nav-tab past" data-section="past-perfect-cont">الماضي التام المستمر</button>
+  <button class="nav-tab present" data-section="present-simple">الحاضر البسيط</button>
+  <button class="nav-tab present" data-section="present-continuous">الحاضر المستمر</button>
+  <button class="nav-tab present" data-section="present-perfect">الحاضر التام</button>
+  <button class="nav-tab present" data-section="present-perfect-cont">الحاضر التام المستمر</button>
+  <button class="nav-tab future" data-section="future-simple">المستقبل البسيط</button>
+  <button class="nav-tab future" data-section="future-continuous">المستقبل المستمر</button>
+  <button class="nav-tab future" data-section="future-perfect">المستقبل التام</button>
+  <button class="nav-tab future" data-section="future-perfect-cont">المستقبل التام المستمر</button>
+  <button class="nav-tab practice" data-section="practice">🎯 تدريب</button>
+</nav>
+
+<main>
+
+<!-- ===================== 1. الماضي البسيط ===================== -->
+<section class="tense-section active" id="sec-past-simple">
+  <div class="section-header">
+    <h2>🔵 الماضي البسيط - Past Simple</h2>
+    <p>يستخدم للتحدث عن أحداث اكتملت وانتهت في الماضي</p>
+    <span class="tense-badge" style="background:var(--sky-light); color:#075985;"> الماضي البسيط 🔵</span>
+  </div>
+
+  <div class="rule-box sky">
+    <h4>📏 القالب (Formula)</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + V2 (الشكل الثاني)<br>
+      <b>النفي:</b> Subject + didn't + V1 (الشكل الأول)<br>
+      <b>السؤال:</b> Did + Subject + V1 ...?
+    </p>
+  </div>
+
+  <div class="rule-box amber">
+    <h4>💡 متى نستخدمه؟</h4>
+    <p>
+      1. حدث اكتمل وانتهى في الماضي:<br>
+      2. سلسلة أحداث متتالية في الماضي:<br>
+      3. حدث في وقت محدد في الماضي:
+    </p>
+    <div class="signal-words">
+      <span class="signal-word sky">yesterday</span>
+      <span class="signal-word sky">last week</span>
+      <span class="signal-word sky">last night</span>
+      <span class="signal-word sky">ago</span>
+      <span class="signal-word sky">in 2020</span>
+      <span class="signal-word sky">last Monday</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">🟢 الإيجابي - Affirmative</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال</th><th>الترجمة</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><b>I</b></td><td class="formula">V2</td><td class="en-sentence">I <b>went</b> to school.</td><td class="ar-sentence">ذهبت إلى المدرسة.</td><td><button class="sound-btn" onclick="speak('I went to school')">🔊</button></td></tr>
+            <tr><td><b>He / She</b></td><td class="formula">V2</td><td class="en-sentence">She <b>played</b> football.</td><td class="ar-sentence">لعبت كرة القدم.</td><td><button class="sound-btn" onclick="speak('She played football')">🔊</button></td></tr>
+            <tr><td><b>We / They</b></td><td class="formula">V2</td><td class="en-sentence">They <b>watched</b> a movie.</td><td class="ar-sentence">شاهدوا فيلمًا.</td><td><button class="sound-btn" onclick="speak('They watched a movie')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">🔴 النفي - Negative</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال</th><th>الترجمة</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><b>I</b></td><td class="formula">didn't + V1</td><td class="en-sentence">I <b>didn't go</b> to school.</td><td class="ar-sentence">لم أذهب إلى المدرسة.</td><td><button class="sound-btn" onclick="speak('I didn\'t go to school')">🔊</button></td></tr>
+            <tr><td><b>He / She</b></td><td class="formula">didn't + V1</td><td class="en-sentence">She <b>didn't play</b>.</td><td class="ar-sentence">لم تلعب.</td><td><button class="sound-btn" onclick="speak('She didn\'t play')">🔊</button></td></tr>
+            <tr><td><b>We / They</b></td><td class="formula">didn't + V1</td><td class="en-sentence">They <b>didn't watch</b>.</td><td class="ar-sentence">لم يشاهدوا.</td><td><button class="sound-btn" onclick="speak('They didn\'t watch')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">❓ السؤال - Question</div>
+    <div class="card-body">
+      <table class="tense-table">
+        <thead><tr><th>الضمير</th><th>القالب</th><th>مثال</th><th>الترجمة</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><b>I / You / He / We / They</b></td><td class="formula">Did + S + V1?</td><td class="en-sentence"><b>Did</b> you <b>go</b> to school?</td><td class="ar-sentence">هل ذهبت إلى المدرسة؟</td><td><button class="sound-btn" onclick="speak('Did you go to school?')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة متنوعة</div>
+    <div class="card-body">
+      <table class="tense-table">
+        <thead><tr><th>الجملة</th><th>الترجمة</th><th></th></tr></thead>
+        <tbody>
+          <tr><td class="en-sentence">I <b>visited</b> my grandmother last week.</td><td class="ar-sentence">زرت جدتي الأسبوع الماضي.</td><td><button class="sound-btn" onclick="speak('I visited my grandmother last week')">🔊</button></td></tr>
+          <tr><td class="en-sentence">She <b>cooked</b> dinner last night.</td><td class="ar-sentence">طبخت العشاء الليلة الماضية.</td><td><button class="sound-btn" onclick="speak('She cooked dinner last night')">🔊</button></td></tr>
+          <tr><td class="en-sentence">We <b>didn't meet</b> yesterday.</td><td class="ar-sentence">لم نلتقي بالأمس.</td><td><button class="sound-btn" onclick="speak('We didn\'t meet yesterday')">🔊</button></td></tr>
+          <tr><td class="en-sentence"><b>Did</b> he <b>finish</b> his homework?</td><td class="ar-sentence">هل أنهى واجبه؟</td><td><button class="sound-btn" onclick="speak('Did he finish his homework?')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 2. الماضي المستمر ===================== -->
+<section class="tense-section" id="sec-past-continuous">
+  <div class="section-header">
+    <h2>🔵 الماضي المستمر - Past Continuous</h2>
+    <p>يستخدم للتحدث عن حدث كان مستمرًا في وقت معين في الماضي</p>
+    <span class="tense-badge" style="background:var(--sky-light); color:#075985;">الماضي المستمر 🔵</span>
+  </div>
+
+  <div class="rule-box sky">
+    <h4>📏 القالب (Formula)</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + was/were + V-ing<br>
+      <b>النفي:</b> Subject + wasn't/weren't + V-ing<br>
+      <b>السؤال:</b> Was/Were + Subject + V-ing?
+    </p>
+  </div>
+
+  <div class="rule-box amber">
+    <h4>💡 متى نستخدمه؟</h4>
+    <p>
+      1. حدث كان مستمرًا في وقت محدد في الماضي<br>
+      2. حدثان يحدثان معًا في الماضي (أثناء... قام...)<br>
+      3. خلفية حدث في قصة
+    </p>
+    <div class="signal-words">
+      <span class="signal-word sky">while</span>
+      <span class="signal-word sky">when</span>
+      <span class="signal-word sky">at that time</span>
+      <span class="signal-word sky">at 8 pm yesterday</span>
+      <span class="signal-word sky">as</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">🟢 الإيجابي</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><b>I / He / She</b></td><td class="formula">was + V-ing</td><td class="en-sentence">I <b>was reading</b> a book.</td><td><button class="sound-btn" onclick="speak('I was reading a book')">🔊</button></td></tr>
+            <tr><td><b>You / We / They</b></td><td class="formula">were + V-ing</td><td class="en-sentence">They <b>were playing</b> football.</td><td><button class="sound-btn" onclick="speak('They were playing football')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">🔴 النفي والسؤال</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <thead><tr><th>النوع</th><th>القالب</th><th>مثال</th><th></th></tr></thead>
+          <tbody>
+            <tr><td>نفي</td><td class="formula">wasn't/weren't + V-ing</td><td class="en-sentence">I <b>wasn't sleeping</b>.</td><td><button class="sound-btn" onclick="speak('I wasn\'t sleeping')">🔊</button></td></tr>
+            <tr><td>سؤال</td><td class="formula">Was/Were + S + V-ing?</td><td class="en-sentence"><b>Were</b> you <b>working</b>?</td><td><button class="sound-btn" onclick="speak('Were you working?')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة</div>
+    <div class="card-body">
+      <table class="tense-table">
+        <tbody>
+          <tr><td class="en-sentence">I <b>was studying</b> when the phone rang.</td><td class="ar-sentence">كنت أدرس عندما رنّ الهاتف.</td><td><button class="sound-btn" onclick="speak('I was studying when the phone rang')">🔊</button></td></tr>
+          <tr><td class="en-sentence">She <b>was cooking</b> while I <b>was setting</b> the table.</td><td class="ar-sentence">كانت تطبخ بينما كنت أرتب الطاولة.</td><td><button class="sound-btn" onclick="speak('She was cooking while I was setting the table')">🔊</button></td></tr>
+          <tr><td class="en-sentence">It <b>was raining</b> at 6 PM yesterday.</td><td class="ar-sentence">كان المطر يهطل الساعة 6 مساءً بالأمس.</td><td><button class="sound-btn" onclick="speak('It was raining at six PM yesterday')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. الماضي التام ===================== -->
+<section class="tense-section" id="sec-past-perfect">
+  <div class="section-header">
+    <h2>🔵 الماضي التام - Past Perfect</h2>
+    <p>يستخدم للتحدث عن حدث سبق وأكتمل قبل حدث آخر في الماضي</p>
+    <span class="tense-badge" style="background:var(--sky-light); color:#075985;">الماضي التام 🔵</span>
+  </div>
+
+  <div class="rule-box sky">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + had + V3 (الشكل الثالث)<br>
+      <b>النفي:</b> Subject + hadn't + V3<br>
+      <b>السؤال:</b> Had + Subject + V3?
+    </p>
+  </div>
+
+  <div class="rule-box amber">
+    <h4>💡 متى نستخدمه؟</h4>
+    <p>
+      حدث أكتمل قبل حدث آخر في الماضي. غالبًا ما يأتي مع <b>before</b> أو <b>after</b> أو <b>when</b>.
+    </p>
+    <div class="signal-words">
+      <span class="signal-word sky">before</span>
+      <span class="signal-word sky">after</span>
+      <span class="signal-word sky">by the time</span>
+      <span class="signal-word sky">already</span>
+      <span class="signal-word sky">just</span>
+      <span class="signal-word sky">never ... before</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">🟢 الإيجابي</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <tbody>
+            <tr><td class="en-sentence">I <b>had finished</b> dinner before he arrived.</td><td class="ar-sentence">أنهيت العشاء قبل أن يصل.</td><td><button class="sound-btn" onclick="speak('I had finished dinner before he arrived')">🔊</button></td></tr>
+            <tr><td class="en-sentence">She <b>had left</b> before I called.</td><td class="ar-sentence">غادرت قبل أن أتصل.</td><td><button class="sound-btn" onclick="speak('She had left before I called')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">🔴 النفي والسؤال</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <tbody>
+            <tr><td class="en-sentence">I <b>hadn't seen</b> that movie before.</td><td class="ar-sentence">لم أشاهد ذلك الفيلم من قبل.</td><td><button class="sound-btn" onclick="speak('I hadn\'t seen that movie before')">🔊</button></td></tr>
+            <tr><td class="en-sentence"><b>Had</b> you <b>eaten</b> before I arrived?</td><td class="ar-sentence">هل كنت قد أكلت قبل أن أصل؟</td><td><button class="sound-btn" onclick="speak('Had you eaten before I arrived?')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4. الماضي التام المستمر ===================== -->
+<section class="tense-section" id="sec-past-perfect-cont">
+  <div class="section-header">
+    <h2>🔵 الماضي التام المستمر - Past Perfect Continuous</h2>
+    <p>يستخدم للتركيز على مدة استمرار حدث قبل حدث آخر في الماضي</p>
+    <span class="tense-badge" style="background:var(--sky-light); color:#075985;">الماضي التام المستمر 🔵</span>
+  </div>
+
+  <div class="rule-box sky">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + had been + V-ing<br>
+      <b>النفي:</b> Subject + hadn't been + V-ing<br>
+      <b>السؤال:</b> Had + Subject + been + V-ing?
+    </p>
+  </div>
+
+  <div class="rule-box amber">
+    <h4>💡 متى نستخدمه؟</h4>
+    <p>
+      للتركيز على <b>المدة الزمنية</b> لحدث مستمر سبق حدثًا آخر في الماضي. يشبه الماضي التام لكن مع التركيز على الاستمرارية.
+    </p>
+    <div class="signal-words">
+      <span class="signal-word sky">for</span>
+      <span class="signal-word sky">since</span>
+      <span class="signal-word sky">all day</span>
+      <span class="signal-word sky">before</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">📝 أمثلة</div>
+    <div class="card-body">
+      <table class="tense-table">
+        <tbody>
+          <tr><td class="en-sentence">I <b>had been working</b> for 5 hours before the meeting.</td><td class="ar-sentence">كنت أعمل منذ 5 ساعات قبل الاجتماع.</td><td><button class="sound-btn" onclick="speak('I had been working for five hours before the meeting')">🔊</button></td></tr>
+          <tr><td class="en-sentence">She <b>had been waiting</b> for 2 hours when the bus came.</td><td class="ar-sentence">كانت تنتظر منذ ساعتين عندما جاء الحافلة.</td><td><button class="sound-btn" onclick="speak('She had been waiting for two hours when the bus came')">🔊</button></td></tr>
+          <tr><td class="en-sentence">They <b>hadn't been sleeping</b> all night.</td><td class="ar-sentence">لم يكونوا ينامون طوال الليل.</td><td><button class="sound-btn" onclick="speak('They hadn\'t been sleeping all night')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5. الحاضر البسيط ===================== -->
+<section class="tense-section" id="sec-present-simple">
+  <div class="section-header">
+    <h2>🟢 الحاضر البسيط - Present Simple</h2>
+    <p>يستخدم للتحدث عن عادات، حقائق، وأمور تتكرر</p>
+    <span class="tense-badge" style="background:var(--green-light); color:#065f46;">الحاضر البسيط 🟢</span>
+  </div>
+
+  <div class="rule-box green">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + V1 / V1+s (مع He, She, It)<br>
+      <b>النفي:</b> Subject + don't/doesn't + V1<br>
+      <b>السؤال:</b> Do/Does + Subject + V1?
+    </p>
+  </div>
+
+  <div class="rule-box amber">
+    <h4>💡 متى نستخدمه؟</h4>
+    <p>
+      1. عادات وتكرار (I drink coffee every morning)<br>
+      2. حقائق عامة (The sun rises in the east)<br>
+      3. جداول وأوقات (The train leaves at 9 AM)<br>
+      4. مشاعر دائمة (I love my family)
+    </p>
+    <div class="signal-words">
+      <span class="signal-word green">always</span>
+      <span class="signal-word green">usually</span>
+      <span class="signal-word green">often</span>
+      <span class="signal-word green">sometimes</span>
+      <span class="signal-word green">never</span>
+      <span class="signal-word green">every day</span>
+      <span class="signal-word green">every week</span>
+      <span class="signal-word green">on Mondays</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">🟢 الإيجابي</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <thead><tr><th>الضمير</th><th>الفعل</th><th>مثال</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><b>I / You / We / They</b></td><td class="formula">V1</td><td class="en-sentence">I <b>play</b> football every week.</td><td><button class="sound-btn" onclick="speak('I play football every week')">🔊</button></td></tr>
+            <tr><td><b>He / She / It</b></td><td class="formula">V1+s</td><td class="en-sentence">She <b>plays</b> tennis every week.</td><td><button class="sound-btn" onclick="speak('She plays tennis every week')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">🔴 النفي والسؤال</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <tbody>
+            <tr><td>نفي</td><td class="formula">don't/doesn't + V1</td><td class="en-sentence">She <b>doesn't like</b> coffee.</td><td><button class="sound-btn" onclick="speak('She doesn\'t like coffee')">🔊</button></td></tr>
+            <tr><td>سؤال</td><td class="formula">Do/Does + S + V1?</td><td class="en-sentence"><b>Does</b> he <b>speak</b> English?</td><td><button class="sound-btn" onclick="speak('Does he speak English?')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة</div>
+    <div class="card-body">
+      <table class="tense-table">
+        <tbody>
+          <tr><td class="en-sentence">I <b>wake up</b> at 7 AM every day.</td><td class="ar-sentence">أستيقظ الساعة 7 صباحًا كل يوم.</td><td><button class="sound-btn" onclick="speak('I wake up at seven AM every day')">🔊</button></td></tr>
+          <tr><td class="en-sentence">The earth <b>revolves</b> around the sun.</td><td class="ar-sentence">تدور الأرض حول الشمس.</td><td><button class="sound-btn" onclick="speak('The earth revolves around the sun')">🔊</button></td></tr>
+          <tr><td class="en-sentence">He <b>doesn't eat</b> meat.</td><td class="ar-sentence">هو لا يأكل اللحم.</td><td><button class="sound-btn" onclick="speak('He doesn\'t eat meat')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6. الحاضر المستمر ===================== -->
+<section class="tense-section" id="sec-present-continuous">
+  <div class="section-header">
+    <h2>🟢 الحاضر المستمر - Present Continuous</h2>
+    <p>يستخدم للتحدث عن حدث يحدث الآن أو حول الوقت الحالي</p>
+    <span class="tense-badge" style="background:var(--green-light); color:#065f46;">الحاضر المستمر 🟢</span>
+  </div>
+
+  <div class="rule-box green">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + am/is/are + V-ing<br>
+      <b>النفي:</b> Subject + am not/isn't/aren't + V-ing<br>
+      <b>السؤال:</b> Am/Is/Are + Subject + V-ing?
+    </p>
+  </div>
+
+  <div class="rule-box amber">
+    <h4>💡 متى نستخدمه؟</h4>
+    <p>
+      1. حدث يحدث الآن (أثناء التحدث)<br>
+      2. مؤقت وحالي<br>
+      3. خطط مستقبلية مؤكدة
+    </p>
+    <div class="signal-words">
+      <span class="signal-word green">now</span>
+      <span class="signal-word green">right now</span>
+      <span class="signal-word green">at the moment</span>
+      <span class="signal-word green">currently</span>
+      <span class="signal-word green">Look!</span>
+      <span class="signal-word green">Listen!</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">🟢 الإيجابي</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <tbody>
+            <tr><td><b>I</b></td><td class="formula">am + V-ing</td><td class="en-sentence">I <b>am studying</b> now.</td><td><button class="sound-btn" onclick="speak('I am studying now')">🔊</button></td></tr>
+            <tr><td><b>He / She / It</b></td><td class="formula">is + V-ing</td><td class="en-sentence">She <b>is cooking</b> dinner.</td><td><button class="sound-btn" onclick="speak('She is cooking dinner')">🔊</button></td></tr>
+            <tr><td><b>You / We / They</b></td><td class="formula">are + V-ing</td><td class="en-sentence">They <b>are playing</b> outside.</td><td><button class="sound-btn" onclick="speak('They are playing outside')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">🔴 النفي والسؤال</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <tbody>
+            <tr><td>نفي</td><td class="formula">am not / isn't / aren't + V-ing</td><td class="en-sentence">I <b>am not sleeping</b>.</td><td><button class="sound-btn" onclick="speak('I am not sleeping')">🔊</button></td></tr>
+            <tr><td>سؤال</td><td class="formula">Am/Is/Are + S + V-ing?</td><td class="en-sentence"><b>Are</b> you <b>working</b>?</td><td><button class="sound-btn" onclick="speak('Are you working?')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 7. الحاضر التام ===================== -->
+<section class="tense-section" id="sec-present-perfect">
+  <div class="section-header">
+    <h2>🟢 الحاضر التام - Present Perfect</h2>
+    <p>يستخدم للربط بين الماضي والحاضر - حدث بدأ في الماضي وله علاقة بالحاضر</p>
+    <span class="tense-badge" style="background:var(--green-light); color:#065f46;">الحاضر التام 🟢</span>
+  </div>
+
+  <div class="rule-box green">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + have/has + V3<br>
+      <b>النفي:</b> Subject + haven't/hasn't + V3<br>
+      <b>السؤال:</b> Have/Has + Subject + V3?
+    </p>
+  </div>
+
+  <div class="rule-box amber">
+    <h4>💡 متى نستخدمه؟</h4>
+    <p>
+      1. تجربة حياة (I have visited Paris)<br>
+      2. حدث بدأ في الماضي وما زال مستمرًا (I have lived here for 5 years)<br>
+      3. مؤخرًا (I have just finished)<br>
+      4. لحد الآن (She has never been abroad)
+    </p>
+    <div class="signal-words">
+      <span class="signal-word green">already</span>
+      <span class="signal-word green">yet</span>
+      <span class="signal-word green">just</span>
+      <span class="signal-word green">ever</span>
+      <span class="signal-word green">never</span>
+      <span class="signal-word green">since</span>
+      <span class="signal-word green">for</span>
+      <span class="signal-word green">so far</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">🟢 الإيجابي</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <tbody>
+            <tr><td><b>I / You / We / They</b></td><td class="formula">have + V3</td><td class="en-sentence">I <b>have visited</b> Cairo.</td><td><button class="sound-btn" onclick="speak('I have visited Cairo')">🔊</button></td></tr>
+            <tr><td><b>He / She / It</b></td><td class="formula">has + V3</td><td class="en-sentence">She <b>has finished</b> her work.</td><td><button class="sound-btn" onclick="speak('She has finished her work')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">🔴 النفي والسؤال</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <tbody>
+            <tr><td>نفي</td><td class="formula">haven't/hasn't + V3</td><td class="en-sentence">I <b>haven't eaten</b> yet.</td><td><button class="sound-btn" onclick="speak('I haven\'t eaten yet')">🔊</button></td></tr>
+            <tr><td>سؤال</td><td class="formula">Have/Has + S + V3?</td><td class="en-sentence"><b>Have</b> you <b>been</b> to Japan?</td><td><button class="sound-btn" onclick="speak('Have you been to Japan?')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 8. الحاضر التام المستمر ===================== -->
+<section class="tense-section" id="sec-present-perfect-cont">
+  <div class="section-header">
+    <h2>🟢 الحاضر التام المستمر - Present Perfect Continuous</h2>
+    <p>يستخدم للتركيز على مدة استمرار حدث بدأ في الماضي ويستمر للآن</p>
+    <span class="tense-badge" style="background:var(--green-light); color:#065f46;">الحاضر التام المستمر 🟢</span>
+  </div>
+
+  <div class="rule-box green">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + have/has been + V-ing<br>
+      <b>النفي:</b> Subject + haven't/hasn't been + V-ing<br>
+      <b>السؤال:</b> Have/Has + Subject + been + V-ing?
+    </p>
+  </div>
+
+  <div class="rule-box amber">
+    <h4>💡 متى نستخدمه؟</h4>
+    <p>
+      للتركيز على <b>المدة الزمنية</b> والاستمرارية. يشبه الحاضر التام لكن مع التركيز على أن الحدث لا يزال مستمرًا.
+    </p>
+    <div class="signal-words">
+      <span class="signal-word green">for</span>
+      <span class="signal-word green">since</span>
+      <span class="signal-word green">all day</span>
+      <span class="signal-word green">all morning</span>
+      <span class="signal-word green">lately</span>
+      <span class="signal-word green">recently</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">📝 أمثلة</div>
+    <div class="card-body">
+      <table class="tense-table">
+        <tbody>
+          <tr><td class="en-sentence">I <b>have been studying</b> for 3 hours.</td><td class="ar-sentence">أنا أدرس منذ 3 ساعات.</td><td><button class="sound-btn" onclick="speak('I have been studying for three hours')">🔊</button></td></tr>
+          <tr><td class="en-sentence">She <b>has been working</b> here since 2020.</td><td class="ar-sentence">هي تعمل هنا منذ 2020.</td><td><button class="sound-btn" onclick="speak('She has been working here since twenty twenty')">🔊</button></td></tr>
+          <tr><td class="en-sentence">It <b>has been raining</b> all day.</td><td class="ar-sentence">المطر يهطل طوال اليوم.</td><td><button class="sound-btn" onclick="speak('It has been raining all day')">🔊</button></td></tr>
+          <tr><td class="en-sentence"><b>Have</b> you <b>been waiting</b> long?</td><td class="ar-sentence">هل كنت تنتظر منذ وقت طويل؟</td><td><button class="sound-btn" onclick="speak('Have you been waiting long?')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 9. المستقبل البسيط ===================== -->
+<section class="tense-section" id="sec-future-simple">
+  <div class="section-header">
+    <h2>🟠 المستقبل البسيط - Future Simple (will)</h2>
+    <p>يستخدم للتحدث عن أحداث ستحدث في المستقبل</p>
+    <span class="tense-badge" style="background:var(--orange-light); color:#9a3412;">المستقبل البسيط 🟠</span>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + will + V1<br>
+      <b>النفي:</b> Subject + won't + V1<br>
+      <b>السؤال:</b> Will + Subject + V1?
+    </p>
+  </div>
+
+  <div class="rule-box amber">
+    <h4>💡 متى نستخدمه؟</h4>
+    <p>
+      1. توقعات وتوقعات شخصية (I think it will rain)<br>
+      2. قرارات لحظية (I'll help you)<br>
+      3. وعود (I will always love you)<br>
+      4. مخططات مستقبلية عامة
+    </p>
+    <div class="signal-words">
+      <span class="signal-word orange">tomorrow</span>
+      <span class="signal-word orange">next week</span>
+      <span class="signal-word orange">next year</span>
+      <span class="signal-word orange">in the future</span>
+      <span class="signal-word orange">soon</span>
+      <span class="signal-word orange">I think</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-header">🟢 الإيجابي</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <tbody>
+            <tr><td class="en-sentence">I <b>will travel</b> next summer.</td><td class="ar-sentence">سأسافر الصيف المقبل.</td><td><button class="sound-btn" onclick="speak('I will travel next summer')">🔊</button></td></tr>
+            <tr><td class="en-sentence">She <b>will call</b> you tomorrow.</td><td class="ar-sentence">ستتصل بك غدًا.</td><td><button class="sound-btn" onclick="speak('She will call you tomorrow')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">🔴 النفي والسؤال</div>
+      <div class="card-body">
+        <table class="tense-table">
+          <tbody>
+            <tr><td>نفي</td><td class="formula">won't + V1</td><td class="en-sentence">I <b>won't forget</b> you.</td><td><button class="sound-btn" onclick="speak('I won\'t forget you')">🔊</button></td></tr>
+            <tr><td>سؤال</td><td class="formula">Will + S + V1?</td><td class="en-sentence"><b>Will</b> you <b>come</b> to the party?</td><td><button class="sound-btn" onclick="speak('Will you come to the party?')">🔊</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10. المستقبل المستمر ===================== -->
+<section class="tense-section" id="sec-future-continuous">
+  <div class="section-header">
+    <h2>🟠 المستقبل المستمر - Future Continuous</h2>
+    <p>يستخدم للتحدث عن حدث سيكون مستمرًا في وقت محدد في المستقبل</p>
+    <span class="tense-badge" style="background:var(--orange-light); color:#9a3412;">المستقبل المستمر 🟠</span>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + will be + V-ing<br>
+      <b>النفي:</b> Subject + won't be + V-ing<br>
+      <b>السؤال:</b> Will + Subject + be + V-ing?
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">📝 أمثلة</div>
+    <div class="card-body">
+      <table class="tense-table">
+        <tbody>
+          <tr><td class="en-sentence">This time tomorrow, I <b>will be flying</b> to Paris.</td><td class="ar-sentence">غدًا في هذا الوقت، سأكون أطير إلى باريس.</td><td><button class="sound-btn" onclick="speak('This time tomorrow, I will be flying to Paris')">🔊</button></td></tr>
+          <tr><td class="en-sentence">She <b>will be sleeping</b> at midnight.</td><td class="ar-sentence">ستكون نائمة عند منتصف الليل.</td><td><button class="sound-btn" onclick="speak('She will be sleeping at midnight')">🔊</button></td></tr>
+          <tr><td class="en-sentence"><b>Will</b> you <b>be using</b> the car tonight?</td><td class="ar-sentence">هل ستكون يستخدم السيارة الليلة؟</td><td><button class="sound-btn" onclick="speak('Will you be using the car tonight?')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 11. المستقبل التام ===================== -->
+<section class="tense-section" id="sec-future-perfect">
+  <div class="section-header">
+    <h2>🟠 المستقبل التام - Future Perfect</h2>
+    <p>يستخدم للتحدث عن حدث سيكون قد أكتمل قبل وقت محدد في المستقبل</p>
+    <span class="tense-badge" style="background:var(--orange-light); color:#9a3412;">المستقبل التام 🟠</span>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + will have + V3<br>
+      <b>النفي:</b> Subject + won't have + V3<br>
+      <b>السؤال:</b> Will + Subject + have + V3?
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">📝 أمثلة</div>
+    <div class="card-body">
+      <table class="tense-table">
+        <tbody>
+          <tr><td class="en-sentence">By next year, I <b>will have graduated</b>.</td><td class="ar-sentence">بحلول العام المقبل، سأكون قد تخرجت.</td><td><button class="sound-btn" onclick="speak('By next year, I will have graduated')">🔊</button></td></tr>
+          <tr><td class="en-sentence">She <b>will have finished</b> by 5 PM.</td><td class="ar-sentence">ستكون قد أنهت بحلول الساعة 5 مساءً.</td><td><button class="sound-btn" onclick="speak('She will have finished by five PM')">🔊</button></td></tr>
+          <tr><td class="en-sentence"><b>Will</b> you <b>have arrived</b> before 9?</td><td class="ar-sentence">هل ستكون قد وصلت قبل الساعة 9؟</td><td><button class="sound-btn" onclick="speak('Will you have arrived before nine?')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 12. المستقبل التام المستمر ===================== -->
+<section class="tense-section" id="sec-future-perfect-cont">
+  <div class="section-header">
+    <h2>🟠 المستقبل التام المستمر - Future Perfect Continuous</h2>
+    <p>يستخدم للتركيز على مدة استمرار حدث قبل وقت محدد في المستقبل</p>
+    <span class="tense-badge" style="background:var(--orange-light); color:#9a3412;">المستقبل التام المستمر 🟠</span>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📏 القالب</h4>
+    <p>
+      <b>الإيجابي:</b> Subject + will have been + V-ing<br>
+      <b>النفي:</b> Subject + won't have been + V-ing<br>
+      <b>السؤال:</b> Will + Subject + have been + V-ing?
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">📝 أمثلة</div>
+    <div class="card-body">
+      <table class="tense-table">
+        <tbody>
+          <tr><td class="en-sentence">By December, I <b>will have been working</b> here for 2 years.</td><td class="ar-sentence">بحلول ديسمبر، سأكون قد عملت هنا لمدة سنتين.</td><td><button class="sound-btn" onclick="speak('By December, I will have been working here for two years')">🔊</button></td></tr>
+          <tr><td class="en-sentence">She <b>will have been studying</b> for 6 hours by then.</td><td class="ar-sentence">ستكون قد درست لمدة 6 ساعات بحلول ذلك الوقت.</td><td><button class="sound-btn" onclick="speak('She will have been studying for six hours by then')">🔊</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== التدريب التفاعلي ===================== -->
+<section class="tense-section" id="sec-practice">
+  <div class="section-header">
+    <h2>🎯 تدريب تفاعلي</h2>
+    <p>اختبر معلوماتك في الأزمنة الإنجليزية</p>
+  </div>
+
+  <div class="quiz-area card">
+    <div class="card-body">
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-fill"></div></div>
+      <div id="quiz-progress-text" style="text-align:center; font-weight:700; color:var(--text-muted); margin-bottom:12px;"></div>
+      <div class="quiz-question" id="quiz-q"></div>
+      <div class="quiz-sub" id="quiz-sub"></div>
+      <div class="quiz-options" id="quiz-opts"></div>
+      <div class="quiz-feedback" id="quiz-fb"></div>
+      <div class="quiz-nav">
+        <button class="sound-btn" id="quiz-next" style="width:auto; border-radius:999px; padding:10px 24px; font-size:14px; font-weight:700; display:none;" onclick="nextQ()">التالي ←</button>
+      </div>
+      <div class="result-box" id="quiz-result" style="display:none;">
+        <div class="result-emoji" id="res-emoji"></div>
+        <div class="result-score" id="res-score"></div>
+        <div class="result-msg" id="res-msg"></div>
+        <button class="sound-btn" style="width:auto; border-radius:999px; padding:10px 24px; font-size:14px; font-weight:700; margin-top:16px;" onclick="startQuiz()">🔄 أعد الاختبار</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="app-footer">إعداد وتصميم ahmad brro</footer>
+
+<script src="js/english-tenses.js"></script>
+</body>
+</html>

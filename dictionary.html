@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قاموس الكلمات الإنجليزية</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>EN</text></svg>">
+<link rel="stylesheet" href="css/dictionary.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="index.html" class="home-btn" title="العودة للرئيسية" style="background:rgba(255,255,255,0.16);color:#fff;border:1px solid rgba(255,255,255,0.25);width:42px;height:42px;border-radius:12px;display:grid;place-items:center;text-decoration:none;font-size:20px;flex-shrink:0;">🏠</a>
+      <div class="brand-icon">📖</div>
+      <div>
+        <h1>القاموس الإنجليزي</h1>
+        <p class="brand-sub">إعداد وتصميم ahmad brro</p>
+      </div>
+    </div>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <button id="btn-sections-drawer" class="btn ghost" title="الأقسام">☰</button>
+      <button id="btn-quiz-saved" class="btn primary" title="اختبار من المحفوظات">⭐ اختبار</button>
+      <span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.85);"><span id="saved-count">0</span> محفوظة</span>
+    </div>
+  </div>
+</header>
+
+<div class="tabs-bar" style="background:var(--bg-soft);border-bottom:1px solid var(--border);position:sticky;top:74px;z-index:40;">
+  <div class="tabs" style="max-width:1280px;margin:0 auto;padding:10px 20px;display:flex;gap:8px;flex-wrap:wrap;">
+    <button class="tab active" data-view="dict">📖 القاموس</button>
+    <button class="tab" data-view="saved">⭐ المحفوظات</button>
+    <button class="tab" data-view="flashcards">🃏 البطاقات</button>
+    <button class="tab" data-view="quiz">🎯 الاختبار</button>
+  </div>
+</div>
+
+<main>
+  <div class="dict-layout">
+
+    <!-- Sidebar -->
+    <aside class="sections-sidebar">
+      <div class="sidebar-title">📚 الأقسام</div>
+      <ul id="sections-list"></ul>
+    </aside>
+
+    <!-- Dict View -->
+    <div class="view active" id="view-dict">
+      <div class="toolbar">
+        <div class="view-title">📚 جميع الكلمات</div>
+        <input type="search" id="dict-search" class="search-input" placeholder="ابحث عن كلمة بالإنجليزية أو العربية..." autocomplete="off">
+      </div>
+      <div id="dict-grid" class="word-grid"></div>
+      <div id="dict-empty" class="empty-state" hidden>لا توجد نتائج</div>
+    </div>
+
+    <!-- Saved View -->
+    <div class="view" id="view-saved">
+      <div class="toolbar">
+        <div class="view-title">⭐ المحفوظات</div>
+        <div class="toolbar-actions">
+          <button id="btn-clear-saved" class="btn danger">🗑 مسح الكل</button>
+        </div>
+      </div>
+      <div id="saved-grid" class="word-grid"></div>
+      <div id="saved-empty" class="empty-state" hidden>لا توجد كلمات محفوظة بعد</div>
+    </div>
+
+    <!-- Flashcards View -->
+    <div class="view" id="view-flashcards">
+      <div class="panel">
+        <h3>🃏 البطاقات التعليمية</h3>
+        <div class="flash-settings">
+          <div class="form-row">
+            <label>النطاق:</label>
+            <select id="fc-scope">
+              <option value="all">جميع الكلمات</option>
+              <option value="saved">المحفوظات فقط</option>
+              <option value="section">قسم محدد</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>القسم:</label>
+            <select id="fc-section" hidden></select>
+          </div>
+          <div class="form-row">
+            <label>الاتجاه:</label>
+            <select id="fc-direction">
+              <option value="en2ar">إنجليزي → عربي</option>
+              <option value="ar2en">عربي → إنجليزي</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>عدد البطاقات:</label>
+            <input type="number" id="fc-count" value="20" min="1" max="500">
+          </div>
+          <div class="form-row">
+            <button id="btn-fc-start" class="btn primary">ابدأ</button>
+          </div>
+        </div>
+      </div>
+      <div class="flash-card-area" id="fc-area" hidden>
+        <div id="fc-progress" class="fc-progress"></div>
+        <div id="flash-card" class="flash-card">
+          <div class="fc-side fc-front">
+            <span id="fc-front-text" class="fc-word"></span>
+          </div>
+          <div class="fc-side fc-back">
+            <div id="fc-back-text" class="fc-arabic"></div>
+            <div id="fc-back-ar" class="fc-hint"></div>
+            <div id="fc-back-ex" class="fc-example"></div>
+          </div>
+        </div>
+        <div class="fc-controls">
+          <button id="btn-fc-prev" class="btn ghost">← السابق</button>
+          <button id="btn-fc-settings" class="btn ghost">⚙ الإعدادات</button>
+          <button id="btn-fc-next" class="btn ghost">التالي →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiz View -->
+    <div class="view" id="view-quiz">
+      <div class="panel" id="quiz-setup">
+        <h3>🎯 اختبار القاموس</h3>
+        <div id="quiz-last-score" style="text-align:center;color:var(--text-muted);margin-bottom:14px;font-weight:700;"></div>
+        <div class="form-row">
+          <label>النطاق:</label>
+          <select id="quiz-scope">
+            <option value="all">جميع الكلمات</option>
+            <option value="saved">المحفوظات فقط</option>
+            <option value="section">قسم محدد</option>
+            <option value="missed">الكلمات الخاطئة</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>القسم:</label>
+          <select id="quiz-section" hidden></select>
+        </div>
+        <div class="form-row">
+          <label>نوع السؤال:</label>
+          <select id="quiz-type">
+            <option value="translation">ترجمة</option>
+            <option value="sentence">إكمال جملة</option>
+          </select>
+        </div>
+        <div class="form-row" id="quiz-direction-row">
+          <label>الاتجاه:</label>
+          <select id="quiz-direction">
+            <option value="en2ar">إنجليزي → عربي</option>
+            <option value="ar2en">عربي → إنجليزي</option>
+            <option value="mixed">مختلط</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>عدد الأسئلة:</label>
+          <input type="number" id="quiz-count" value="10" min="1" max="100">
+        </div>
+        <div class="form-row">
+          <button id="btn-quiz-start" class="btn primary">ابدأ الاختبار</button>
+        </div>
+      </div>
+      <div class="panel quiz-area" id="quiz-area" hidden>
+        <button id="btn-quiz-back" class="btn ghost" style="display:block;margin-bottom:16px;">⚙ العودة للإعدادات</button>
+        <div class="quiz-progress-bar"><div id="quiz-progress-fill" class="quiz-progress-fill"></div></div>
+        <div id="quiz-progress-text" class="quiz-progress-text"></div>
+        <div id="quiz-question" class="quiz-question"></div>
+        <div class="quiz-question-sub"></div>
+        <div id="quiz-options" class="quiz-options"></div>
+        <div id="quiz-feedback" class="quiz-feedback"></div>
+        <button id="btn-quiz-next" class="btn primary" hidden style="display:block;margin:20px auto 0;">السؤال التالي</button>
+      </div>
+      <div class="panel" id="quiz-result" hidden>
+        <div id="result-score" class="result-score"></div>
+        <div id="result-details" class="result-details"></div>
+        <button id="btn-quiz-retry" class="btn primary" style="display:block;margin:0 auto;">أعد الاختبار</button>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Sections Drawer (Mobile) -->
+<div id="sections-drawer-overlay" class="drawer-overlay"></div>
+<div id="sections-drawer" class="sections-drawer">
+  <div class="drawer-head">
+    <span class="drawer-title">الأقسام</span>
+    <button id="sections-drawer-close" class="drawer-close">✕</button>
+  </div>
+  <ul id="sections-drawer-list"></ul>
+</div>
+
+<!-- Examples Modal -->
+<div id="modal-overlay" class="modal-overlay" hidden>
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="modal-title" style="margin:0;font-size:17px;color:var(--primary-dark);"></h3>
+      <button id="modal-close" class="modal-close">✕</button>
+    </div>
+    <div id="modal-body" class="modal-body"></div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="toast" hidden></div>
+
+<script src="js/dictionary.js"></script>
+</body>
+</html>
