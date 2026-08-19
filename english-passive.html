@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المبني للمجهول - Passive Voice</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%237c3aed'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>PV</text></svg>">
+<link rel="stylesheet" href="css/english-passive.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="index.html" style="width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,0.18);display:grid;place-items:center;font-size:18px;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.3);flex-shrink:0;" title="العودة للرئيسية">🏠</a>
+      <div class="brand-icon">PV</div>
+      <div>
+        <h1>المبني للمجهول - Passive Voice</h1>
+        <p class="brand-sub">إعداد وتصميم ahmad brro</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-tabs" id="nav-tabs">
+  <button class="nav-tab active" data-section="present">🟢 المضارع</button>
+  <button class="nav-tab" data-section="past">🔵 الماضي</button>
+  <button class="nav-tab" data-section="future">🟡 المستقبل</button>
+  <button class="nav-tab" data-section="all-tenses">🔴 المبني للمجهول</button>
+  <button class="nav-tab" data-section="practice">🟣 التدريب</button>
+</nav>
+
+<main>
+
+<!-- ===================== المبني للمجهول المضارع ===================== -->
+<section class="section active" id="sec-present">
+  <div class="section-header">
+    <h2>🟢 المبني للمجهول في المضارع - Present Passive</h2>
+    <p>تُستخدم الجملة المبنية للمجهول عندما لا يكون مهمًا مَن قام بالفعل أو عندما يكون الفاعل غير معروف</p>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📐 الصيغة - Present Simple Passive</h4>
+    <p style="direction:ltr;text-align:left;"><strong>S + am/is/are + V3 (past participle)</strong></p>
+    <p style="margin-top:8px;">الفاعل + am/is/are + الفعل الثالث (التصريف الثالث)</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">S + am/is/are + V3</div>
+    <div class="ar-formula">الفاعل + am/is/are + الفعل الثالث</div>
+  </div>
+
+  <div class="rule-box green">
+    <h4>💡 متى نستخدم المضارع البسيط المبني للمجهول؟</h4>
+    <p>• الحقائق العامة (English <strong>is spoken</strong> all over the world.)<br>
+    • الروتين اليومي (The office <strong>is opened</strong> at 8 AM.)<br>
+    • عندما يكون الفاعل غير معروف (My bike <strong>was stolen</strong>.)</p>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة على المضارع البسيط المبني للمجهول</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>المبني للمعلوم</th><th>المبني للمجهول</th><th>الترجمة</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">People speak English here.</td>
+            <td class="example-sentence">English is spoken here.</td>
+            <td class="ar-word">يتحدث الناس بالإنجليزية هنا. ← تُتحدث الإنجليزية هنا.</td>
+            <td><button class="sound-btn" onclick="speak('English is spoken here.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">They clean the room every day.</td>
+            <td class="example-sentence">The room is cleaned every day.</td>
+            <td class="ar-word">ينظفون الغرفة كل يوم. ← تُنظف الغرفة كل يوم.</td>
+            <td><button class="sound-btn" onclick="speak('The room is cleaned every day.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">She makes the cake.</td>
+            <td class="example-sentence">The cake is made by her.</td>
+            <td class="ar-word">هي تصنع الكعكة. ← تُصنع الكعكة بواسطتها.</td>
+            <td><button class="sound-btn" onclick="speak('The cake is made by her.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">They grow coffee in Brazil.</td>
+            <td class="example-sentence">Coffee is grown in Brazil.</td>
+            <td class="ar-word">يزرعون القهوة في البرازيل. ← تُزرع القهوة في البرازيل.</td>
+            <td><button class="sound-btn" onclick="speak('Coffee is grown in Brazil.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">We deliver the packages.</td>
+            <td class="example-sentence">The packages are delivered.</td>
+            <td class="ar-word">نوصّل الطرود. ← تُوصّل الطرود.</td>
+            <td><button class="sound-btn" onclick="speak('The packages are delivered.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">Someone stole my phone.</td>
+            <td class="example-sentence">My phone is stolen.</td>
+            <td class="ar-word">سرق شخص ما هاتفي. ← هاتفي مسروق.</td>
+            <td><button class="sound-btn" onclick="speak('My phone is stolen.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="rule-box violet" style="margin-top:20px;">
+    <h4>🔄 المضارع المستمر المبني للمجهول - Present Continuous Passive</h4>
+    <p style="direction:ltr;text-align:left;"><strong>S + am/is/are + being + V3</strong></p>
+    <p style="margin-top:8px;">يُستخدم للتعبير عن حدث جارٍ الآن:</p>
+    <p style="direction:ltr;text-align:left;margin-top:4px;">The road <strong>is being repaired</strong>. | Dinner <strong>is being prepared</strong>.</p>
+  </div>
+
+  <div class="rule-box sky" style="margin-top:20px;">
+    <h4>🔄 المضارع التام المبني للمجهول - Present Perfect Passive</h4>
+    <p style="direction:ltr;text-align:left;"><strong>S + have/has + been + V3</strong></p>
+    <p style="margin-top:8px;">يُستخدم للتعبير عن فعل اكتمل ولديه علاقة بالحاضر:</p>
+    <p style="direction:ltr;text-align:left;margin-top:4px;">The book <strong>has been translated</strong> into Arabic. | The work <strong>has been done</strong>.</p>
+  </div>
+</section>
+
+<!-- ===================== المبني للمجهول الماضي ===================== -->
+<section class="section" id="sec-past">
+  <div class="section-header">
+    <h2>🔵 المبني للمجهول في الماضي - Past Passive</h2>
+    <p>تُستخدم للتحدث عن أحداث وقعت في الماضي عندما يكون الفاعل غير معروف أو غير مهم</p>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📐 الصيغة - Past Simple Passive</h4>
+    <p style="direction:ltr;text-align:left;"><strong>S + was/were + V3 (past participle)</strong></p>
+    <p style="margin-top:8px;">الفاعل + was/were + الفعل الثالث</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">S + was/were + V3</div>
+    <div class="ar-formula">الفاعل + was/were + الفعل الثالث</div>
+  </div>
+
+  <div class="rule-box green">
+    <h4>💡 متى نستخدم الماضي البسيط المبني للمجهول؟</h4>
+    <p>• أحداث تاريخية (The pyramids <strong>were built</strong> thousands of years ago.)<br>
+    • أحداث ماضية غير معروف فاعلها (The window <strong>was broken</strong> last night.)<br>
+    • الإبلاغ عن أخبار (The new road <strong>was opened</strong> yesterday.)</p>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة على الماضي البسيط المبني للمجهول</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>المبني للمعلوم</th><th>المبني للمجهول</th><th>الترجمة</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">They built the house in 1990.</td>
+            <td class="example-sentence">The house was built in 1990.</td>
+            <td class="ar-word">بنوا المنزل عام 1990. ← بُني المنزل عام 1990.</td>
+            <td><button class="sound-btn" onclick="speak('The house was built in 1990.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">Someone stole my bike.</td>
+            <td class="example-sentence">My bike was stolen yesterday.</td>
+            <td class="ar-word">سرق شخص ما دراجتي. ← سُرقت دراجتي أمس.</td>
+            <td><button class="sound-btn" onclick="speak('My bike was stolen yesterday.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">They discovered the medicine in 1928.</td>
+            <td class="example-sentence">The medicine was discovered in 1928.</td>
+            <td class="ar-word">اكتشفوا الدواء عام 1928. ← اكتُشف الدواء عام 1928.</td>
+            <td><button class="sound-btn" onclick="speak('The medicine was discovered in 1928.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">She wrote the book.</td>
+            <td class="example-sentence">The book was written by her.</td>
+            <td class="ar-word">هي كتبت الكتاب. ← كُتب الكتاب بواسطتها.</td>
+            <td><button class="sound-btn" onclick="speak('The book was written by her.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">We sent the invitations.</td>
+            <td class="example-sentence">The invitations were sent last week.</td>
+            <td class="ar-word">أرسلنا الدعوات. ← أُرسلت الدعوات الأسبوع الماضي.</td>
+            <td><button class="sound-btn" onclick="speak('The invitations were sent last week.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">Someone broke the window.</td>
+            <td class="example-sentence">The window was broken.</td>
+            <td class="ar-word">كسر شخص ما النافذة. ← كُسرت النافذة.</td>
+            <td><button class="sound-btn" onclick="speak('The window was broken.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="rule-box violet" style="margin-top:20px;">
+    <h4>🔄 الماضي المستمر المبني للمجهول - Past Continuous Passive</h4>
+    <p style="direction:ltr;text-align:left;"><strong>S + was/were + being + V3</strong></p>
+    <p style="margin-top:8px;">يُستخدم للتعبير عن فعل كان جارياً في الماضي:</p>
+    <p style="direction:ltr;text-align:left;margin-top:4px;">The house <strong>was being painted</strong> when I arrived. | A new bridge <strong>was being built</strong>.</p>
+  </div>
+</section>
+
+<!-- ===================== المبني للمجهول المستقبل ===================== -->
+<section class="section" id="sec-future">
+  <div class="section-header">
+    <h2>🟡 المبني للمجهول في المستقبل - Future Passive</h2>
+    <p>تُستخدم للتحدث عن أحداث ستحدث في المستقبل عندما يكون الفاعل غير معروف أو غير مهم</p>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📐 الصيغة - Future Simple Passive</h4>
+    <p style="direction:ltr;text-align:left;"><strong>S + will be + V3 (past participle)</strong></p>
+    <p style="margin-top:8px;">الفاعل + will be + الفعل الثالث</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">S + will be + V3</div>
+    <div class="ar-formula">الفاعل + will be + الفعل الثالث</div>
+  </div>
+
+  <div class="rule-box green">
+    <h4>💡 متى نستخدم المستقبل المبني للمجهول؟</h4>
+    <p>• أحداث مستقبلية (The project <strong>will be finished</strong> tomorrow.)<br>
+    • التكاليف والتوقعات (The results <strong>will be announced</strong> next week.)<br>
+    • التوقعات (More jobs <strong>will be created</strong> by 2030.)</p>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة على المستقبل المبني للمجهول</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>المبني للمعلوم</th><th>المبني للمجهول</th><th>الترجمة</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">They will build a new hospital.</td>
+            <td class="example-sentence">A new hospital will be built.</td>
+            <td class="ar-word">سيبنون مستشفىً جديداً. ← سيُبنى مستشفىً جديد.</td>
+            <td><button class="sound-btn" onclick="speak('A new hospital will be built.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">They will announce the results tomorrow.</td>
+            <td class="example-sentence">The results will be announced tomorrow.</td>
+            <td class="ar-word">سيعلنون عن النتائج غداً. ← سيُعلن عن النتائج غداً.</td>
+            <td><button class="sound-btn" onclick="speak('The results will be announced tomorrow.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">They will deliver the package tonight.</td>
+            <td class="example-sentence">The package will be delivered tonight.</td>
+            <td class="ar-word">سيوصّلون الطرد الليلة. ← سيُوصّل الطرد الليلة.</td>
+            <td><button class="sound-btn" onclick="speak('The package will be delivered tonight.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">People will use less plastic.</td>
+            <td class="example-sentence">Less plastic will be used.</td>
+            <td class="ar-word">سيستخدم الناس بلاستيكاً أقل. ← سيُستخدم بلاستيك أقل.</td>
+            <td><button class="sound-btn" onclick="speak('Less plastic will be used.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">They will repair the road next week.</td>
+            <td class="example-sentence">The road will be repaired next week.</td>
+            <td class="ar-word">سيصلحون الطريق الأسبوع المقبل. ← سيُصلح الطريق الأسبوع المقبل.</td>
+            <td><button class="sound-btn" onclick="speak('The road will be repaired next week.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">They will translate the book.</td>
+            <td class="example-sentence">The book will be translated into Arabic.</td>
+            <td class="ar-word">سيترجمون الكتاب. ← سيُترجم الكتاب إلى العربية.</td>
+            <td><button class="sound-btn" onclick="speak('The book will be translated into Arabic.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="rule-box sky" style="margin-top:20px;">
+    <h4>🔄 صيغة المبني للمجهول مع الأفعال المساعدة</h4>
+    <p>يمكن استخدام أفعال مساعدة أخرى مع المبني للمجهول:<br>
+    <span style="direction:ltr;text-align:left;display:inline-block;">S + <strong>can/must/should + be + V3</strong></span><br><br>
+    <span style="direction:ltr;text-align:left;display:inline-block;">The work <strong>must be finished</strong> today. | This problem <strong>can be solved</strong>.</span></p>
+  </div>
+</section>
+
+<!-- ===================== المبني للمجهول - ملخص شامل ===================== -->
+<section class="section" id="sec-all-tenses">
+  <div class="section-header">
+    <h2>🔴 المبني للمجهول - ملخص شامل لجميع الأزمنة</h2>
+    <p>مراجعة سريعة لجميع أزمنة المبني للمجهول في اللغة الإنجليزية</p>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📐 الفرق بين المبني للمعلوم والمبني للمجهول</h4>
+    <p>المبني للمعلوم: الفاعل performs the action (The chef cooks the food.)<br>
+    المبني للمجهول: الفاعل receives the action (The food is cooked by the chef.)<br><br>
+    <strong>المبني للمجهول يُستخدم عندما:</strong><br>
+    • الفاعل غير معروف<br>
+    • الفاعل غير مهم (الأهم هو الفعل)<br>
+    • في الأسلوب الرسمي والأكاديمي<br>
+    • في تقارير الأخبار والأحداث التاريخية</p>
+  </div>
+
+  <div class="grid-2" style="margin-top:20px;">
+
+    <div class="card">
+      <div class="card-header" style="background:var(--green-light);">🟢 المضارع البسيط - Present Simple Passive</div>
+      <div class="card-body">
+        <div class="formula-box">
+          <div class="en-formula">S + am/is/are + V3</div>
+          <div class="ar-formula">الفاعل + am/is/are + الفعل الثالث</div>
+        </div>
+        <div class="rule-box green" style="margin-top:12px;">
+          <p>English <strong>is spoken</strong> worldwide.<br>
+          The office <strong>is opened</strong> at 9 AM.<br>
+          Coffee <strong>is grown</strong> in Brazil.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--green-light);">🟢 المضارع المستمر - Present Continuous Passive</div>
+      <div class="card-body">
+        <div class="formula-box">
+          <div class="en-formula">S + am/is/are + being + V3</div>
+          <div class="ar-formula">الفاعل + am/is/are + being + الفعل الثالث</div>
+        </div>
+        <div class="rule-box green" style="margin-top:12px;">
+          <p>The road <strong>is being repaired</strong>.<br>
+          Dinner <strong>is being prepared</strong>.<br>
+          A new building <strong>is being constructed</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--sky-light);">🔵 الماضي البسيط - Past Simple Passive</div>
+      <div class="card-body">
+        <div class="formula-box">
+          <div class="en-formula">S + was/were + V3</div>
+          <div class="ar-formula">الفاعل + was/were + الفعل الثالث</div>
+        </div>
+        <div class="rule-box sky" style="margin-top:12px;">
+          <p>The pyramids <strong>were built</strong> thousands of years ago.<br>
+          The phone <strong>was stolen</strong> yesterday.<br>
+          The movie <strong>was directed</strong> by Spielberg.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--sky-light);">🔵 الماضي المستمر - Past Continuous Passive</div>
+      <div class="card-body">
+        <div class="formula-box">
+          <div class="en-formula">S + was/were + being + V3</div>
+          <div class="ar-formula">الفاعل + was/were + being + الفعل الثالث</div>
+        </div>
+        <div class="rule-box sky" style="margin-top:12px;">
+          <p>The house <strong>was being painted</strong>.<br>
+          The road <strong>was being repaired</strong> when I arrived.<br>
+          A report <strong>was being written</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--amber-light);">🟡 المستقبل البسيط - Future Simple Passive</div>
+      <div class="card-body">
+        <div class="formula-box">
+          <div class="en-formula">S + will be + V3</div>
+          <div class="ar-formula">الفاعل + will be + الفعل الثالث</div>
+        </div>
+        <div class="rule-box orange" style="margin-top:12px;">
+          <p>A new hospital <strong>will be built</strong>.<br>
+          The results <strong>will be announced</strong> tomorrow.<br>
+          Less plastic <strong>will be used</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--violet-light);">🟣 التام - Perfect Passive</div>
+      <div class="card-body">
+        <div class="formula-box">
+          <div class="en-formula">S + have/has + been + V3</div>
+          <div class="ar-formula">الفاعل + have/has + been + الفعل الثالث</div>
+        </div>
+        <div class="rule-box violet" style="margin-top:12px;">
+          <p>The book <strong>has been translated</strong>.<br>
+          The work <strong>has been completed</strong>.<br>
+          All tickets <strong>have been sold</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" style="background:var(--rose-light);">🔴 مع الأفعال المساعدة - Modal Passive</div>
+      <div class="card-body">
+        <div class="formula-box">
+          <div class="en-formula">S + can/must/should + be + V3</div>
+          <div class="ar-formula">الفاعل + can/must/should + be + الفعل الثالث</div>
+        </div>
+        <div class="rule-box green" style="margin-top:12px;">
+          <p>This work <strong>must be finished</strong> today.<br>
+          The problem <strong>can be solved</strong>.<br>
+          Mistakes <strong>should be corrected</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 جدول مقارنة شامل</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>الزمن</th><th>الصيغة</th><th>مثال</th><th>الترجمة</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span style="color:var(--green);font-weight:800;">المضارع البسيط</span></td>
+            <td class="en-word">S + am/is/are + V3</td>
+            <td class="example-sentence">English is spoken here.</td>
+            <td class="ar-word">تُتحدث الإنجليزية هنا.</td>
+            <td><button class="sound-btn" onclick="speak('English is spoken here.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span style="color:var(--green);font-weight:800;">المضارع المستمر</span></td>
+            <td class="en-word">S + am/is/are + being + V3</td>
+            <td class="example-sentence">The road is being repaired.</td>
+            <td class="ar-word">يتم إصلاح الطريق.</td>
+            <td><button class="sound-btn" onclick="speak('The road is being repaired.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span style="color:var(--sky);font-weight:800;">الماضي البسيط</span></td>
+            <td class="en-word">S + was/were + V3</td>
+            <td class="example-sentence">The house was built in 1990.</td>
+            <td class="ar-word">بُني المنزل عام 1990.</td>
+            <td><button class="sound-btn" onclick="speak('The house was built in 1990.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span style="color:var(--sky);font-weight:800;">الماضي المستمر</span></td>
+            <td class="en-word">S + was/were + being + V3</td>
+            <td class="example-sentence">The car was being washed.</td>
+            <td class="ar-word">كان يتم غسل السيارة.</td>
+            <td><button class="sound-btn" onclick="speak('The car was being washed.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span style="color:var(--amber);font-weight:800;">المستقبل البسيط</span></td>
+            <td class="en-word">S + will be + V3</td>
+            <td class="example-sentence">The results will be announced.</td>
+            <td class="ar-word">سيُعلن عن النتائج.</td>
+            <td><button class="sound-btn" onclick="speak('The results will be announced.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span style="color:var(--violet);font-weight:800;">المضارع التام</span></td>
+            <td class="en-word">S + have/has + been + V3</td>
+            <td class="example-sentence">The book has been translated.</td>
+            <td class="ar-word">تم ترجمة الكتاب.</td>
+            <td><button class="sound-btn" onclick="speak('The book has been translated.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td><span style="color:var(--rose);font-weight:800;">مع الأفعال المساعدة</span></td>
+            <td class="en-word">S + can/must/should + be + V3</td>
+            <td class="example-sentence">This must be done today.</td>
+            <td class="ar-word">يجب أن يُنجز هذا اليوم.</td>
+            <td><button class="sound-btn" onclick="speak('This must be done today.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== تدريب ===================== -->
+<section class="section" id="sec-practice">
+  <div class="section-header">
+    <h2>🟣 تدريب تفاعلي</h2>
+    <p>اختبر معلوماتك في المبني للمجهول لجميع الأزمنة</p>
+  </div>
+
+  <div class="quiz-container">
+    <div class="quiz-area" id="quiz-container">
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-fill"></div></div>
+      <div class="quiz-question" id="quiz-question"></div>
+      <div class="quiz-options" id="quiz-options"></div>
+      <div class="quiz-feedback" id="quiz-feedback"></div>
+      <div class="quiz-nav">
+        <button class="btn btn-primary" id="btn-next" style="display:none;">السؤال التالي ←</button>
+      </div>
+      <div class="quiz-result" id="quiz-result" style="display:none;"></div>
+      <div style="text-align:center;margin-top:16px;">
+        <button class="btn btn-ghost" id="btn-restart" style="display:none;">🔄 أعد التدريب</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="app-footer">إعداد وتصميم ahmad brro</footer>
+
+<script src="js/english-passive.js"></script>
+</body>
+</html>

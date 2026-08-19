@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تشكيل الأسئلة واستخدام أدوات الاستفهام</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23f59e0b'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>?!</text></svg>">
+<link rel="stylesheet" href="css/english-questions.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="index.html" style="width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,0.18);display:grid;place-items:center;font-size:18px;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.3);flex-shrink:0;" title="العودة للرئيسية">🏠</a>
+      <div class="brand-icon">?!</div>
+      <div>
+        <h1>تشكيل الأسئلة واستخدام أدوات الاستفهام</h1>
+        <p class="brand-sub">إعداد وتصميم ahmad brro</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-tabs" id="nav-tabs">
+  <button class="nav-tab active" data-section="words">🔍 أدوات الاستفهام</button>
+  <button class="nav-tab" data-section="wh">❓ أسئلة WH</button>
+  <button class="nav-tab" data-section="yesno">✅ أسئلة Yes/No</button>
+  <button class="nav-tab" data-section="practice">🎯 تدريب</button>
+</nav>
+
+<main>
+
+<!-- ===================== أدوات الاستفهام ===================== -->
+<section class="section active" id="sec-words">
+  <div class="section-header">
+    <h2>🔍 أدوات الاستفهام - Question Words</h2>
+    <p>كلمات تُستخدم لطرح الأسئلة والحصول على معلومات محددة</p>
+  </div>
+
+  <div class="rule-box">
+    <h4>💡 القاعدة الأساسية</h4>
+    <p>أدوات الاستفهام (Wh-Words) تبدأ بحرف W أو حرف H وتُستخدم للحصول على معلومات معينة مثل: من؟ ماذا؟ أين؟ متى؟ لماذا؟ كيف؟</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">📋 جدول أدوات الاستفهام</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table" id="qw-table">
+        <thead>
+          <tr>
+            <th>الكلمة</th>
+            <th>النطق</th>
+            <th>الترجمة</th>
+            <th>تُستخدم لـ</th>
+            <th>مثال</th>
+            <th>🔊</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">🧩 ملخص سريع</div>
+    <div class="card-body">
+      <div class="qw-quick-grid" id="qw-quick-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== أسئلة WH ===================== -->
+<section class="section" id="sec-wh">
+  <div class="section-header">
+    <h2>❓ تشكيل أسئلة WH - WH-Questions</h2>
+    <p>الصيغة الصحيحة لتكوين الأسئلة التي تبدأ بأداة استفهام</p>
+  </div>
+
+  <div class="rule-box">
+    <h4>📐 الصيغة العامة</h4>
+    <p style="direction:ltr;text-align:left;"><strong>WH-Word + Auxiliary Verb + Subject + Main Verb + ?</strong></p>
+    <p style="margin-top:8px;">أداة الاستفهام + الفعل المساعد + الفاعل + الفعل الرئيسي + علامة استفهام</p>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة على كل أداة استفهام</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table" id="wh-examples-table">
+        <thead>
+          <tr>
+            <th>أداة الاستفهام</th>
+            <th>الصيغة</th>
+            <th>السؤال</th>
+            <th>الجواب</th>
+            <th>🔊</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="rule-box" style="margin-top:20px;">
+    <h4>⚠️ ملاحظات مهمة</h4>
+    <p>• عند استخدام Who كفاعل: لا نحتاج فعلي مساعدة (Who <strong>knows</strong> the answer?)<br>
+    • عند استخدام What/Where/When كفاعل: نستخدم do/does (What <strong>does</strong> she want?)<br>
+    • مع الأزمنة الماضية: نستخدم did (Where <strong>did</strong> you go?)<br>
+    • How يمكن أن تُستخدم وحدها أو مع صفة (How are you? / How old are you?)</p>
+  </div>
+
+  <div class="grid-2" style="margin-top:20px;">
+    <div class="card">
+      <div class="card-header">🔄 تغيير الجملة إلى سؤال</div>
+      <div class="card-body" id="wh-transform-examples"></div>
+    </div>
+    <div class="card">
+      <div class="card-header">🎯 اختر الإجابة الصحيحة</div>
+      <div class="card-body" id="wh-which-word"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== أسئلة Yes/No ===================== -->
+<section class="section" id="sec-yesno">
+  <div class="section-header">
+    <h2>✅ أسئلة Yes/No - Yes/No Questions</h2>
+    <p>أسئلة تُجيب عنها بنعم (Yes) أو لا (No)</p>
+  </div>
+
+  <div class="rule-box">
+    <h4>📐 الصيغة العامة</h4>
+    <p style="direction:ltr;text-align:left;"><strong>Auxiliary Verb + Subject + Main Verb + ?</strong></p>
+    <p style="margin-top:8px;">الفعل المساعد + الفاعل + الفعل الرئيسي + علامة استفهام</p>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📋 الأفعال المساعدة المستخدمة</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table" id="yn-aux-table">
+        <thead>
+          <tr>
+            <th>الفعل المساعد</th>
+            <th>الزمن</th>
+            <th>مثال سؤال</th>
+            <th>جواب نعم</th>
+            <th>جواب لا</th>
+            <th>🔊</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">🔄 كيف تُحوّل الجملة إلى سؤال Yes/No</div>
+    <div class="card-body" id="yn-transform"></div>
+  </div>
+
+  <div class="rule-box" style="margin-top:20px;">
+    <h4>💡 الفرق بين WH و Yes/No</h4>
+    <p>• <strong>WH-Question:</strong> تبدأ بأداة استفهام وتحتاج جواب تفصيلي<br>
+    &nbsp;&nbsp;Where do you live? → I live in Cairo.<br>
+    • <strong>Yes/No Question:</strong> تبدأ بفعل مساعد وتحتاج نعم أو لا فقط<br>
+    &nbsp;&nbsp;Do you live in Cairo? → Yes, I do. / No, I don't.</p>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة تفاعلية</div>
+    <div class="card-body" id="yn-examples"></div>
+  </div>
+</section>
+
+<!-- ===================== تدريب ===================== -->
+<section class="section" id="sec-practice">
+  <div class="section-header">
+    <h2>🎯 تدريب تفاعلي</h2>
+    <p>اختبر معلوماتك في تشكيل الأسئلة واستخدام أدوات الاستفهام</p>
+  </div>
+
+  <div class="quiz-container" id="quiz-container">
+    <div class="quiz-progress">
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-fill"></div></div>
+      <span class="quiz-progress-text" id="quiz-progress-text"></span>
+    </div>
+    <div class="quiz-card" id="quiz-card">
+      <div class="quiz-question" id="quiz-question"></div>
+      <div class="quiz-options" id="quiz-options"></div>
+      <div class="quiz-feedback" id="quiz-feedback"></div>
+    </div>
+    <div class="quiz-nav">
+      <button class="btn btn-primary" id="btn-next" style="display:none;">السؤال التالي ←</button>
+    </div>
+    <div class="quiz-result" id="quiz-result" style="display:none;"></div>
+    <div style="text-align:center;margin-top:16px;">
+      <button class="btn btn-ghost" id="btn-restart" style="display:none;">🔄 أعد التدريب</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="app-footer">إعداد وتصميم ahmad brro</footer>
+
+<script src="js/english-questions.js"></script>
+</body>
+</html>

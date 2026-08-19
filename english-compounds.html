@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الكلمات المركبة - Compound Words</title>
+<link rel="stylesheet" href="css/english-compounds.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { font-family: "Cairo","Segoe UI",Tahoma,sans-serif; }
+  .type-badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; direction: ltr; }
+  .type-badge.open { background: #d1fae5; color: #065f46; }
+  .type-badge.closed { background: #dbeafe; color: #1e40af; }
+  .type-badge.hyphenated { background: #fef3c7; color: #92400e; }
+</style>
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="index.html" style="width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,0.18);display:grid;place-items:center;font-size:18px;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.3);flex-shrink:0;" title="العودة للرئيسية">🏠</a>
+      <div class="brand-icon">CW</div>
+      <div>
+        <h1>الكلمات المركبة</h1>
+        <div class="brand-sub">Compound Words - تعلم تكوين الكلمات الإنجليزية</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-tabs" id="navTabs">
+  <button class="nav-tab active" data-section="open">🟢 مركبات مفتوحة</button>
+  <button class="nav-tab" data-section="closed">🔵 مركبات مغلقة</button>
+  <button class="nav-tab" data-section="hyphenated">🟡 مركبات نصف مغلقة</button>
+  <button class="nav-tab" data-section="common">🟣 المركبات الشائعة</button>
+  <button class="nav-tab" data-section="quiz">🔴 التدريب</button>
+</nav>
+
+<main>
+
+<!-- ===== قسم المركبات المفتوحة ===== -->
+<div class="section active" id="section-open">
+  <div class="section-header">
+    <h2>🟢 المركبات المفتوحة - Open Compounds</h2>
+    <p>كلمات مكونة من كلمتين مفروقتين لكنهما تعطيان معنى واحداً جديداً</p>
+  </div>
+
+  <div class="rule-box teal">
+    <h4>🔍 ما هي المركبات المفتوحة؟</h4>
+    <p>المركبات المفتوحة (Open Compounds) هي كلمات تتكون من كلمتين مكتوبتين بشكل منفصل لكنهما يشكّلان معاً كلمة واحدة بمعنى جديد. مثلاً: <strong>ice cream</strong> = ice (جليد) + cream (كريمة) = آيس كريم</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Word 1 + Word 2 → New Meaning</div>
+    <div class="ar-formula">كلمة ١ + كلمة ٢ → معنى جديد (مكتوب بشكل منفصل)</div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">📋 مركبات مفتوحة شائعة</div>
+    <div class="card-body" style="padding:0; overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            <th>الصوت</th>
+            <th>المركبة</th>
+            <th>الجزء ١</th>
+            <th>الجزء ٢</th>
+            <th>المعنى بالعربية</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('ice cream')">🔊</button></td>
+            <td class="en-word">ice cream</td>
+            <td class="en-word">ice</td>
+            <td class="en-word">cream</td>
+            <td class="ar-word">آيس كريم</td>
+            <td class="example-sentence">I want to eat ice cream.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('post office')">🔊</button></td>
+            <td class="en-word">post office</td>
+            <td class="en-word">post</td>
+            <td class="en-word">office</td>
+            <td class="ar-word">مكتب بريد</td>
+            <td class="example-sentence">I went to the post office.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('real estate')">🔊</button></td>
+            <td class="en-word">real estate</td>
+            <td class="en-word">real</td>
+            <td class="en-word">estate</td>
+            <td class="ar-word">عقارات</td>
+            <td class="example-sentence">He works in real estate.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('high school')">🔊</button></td>
+            <td class="en-word">high school</td>
+            <td class="en-word">high</td>
+            <td class="en-word">school</td>
+            <td class="ar-word">المدرسة الثانوية</td>
+            <td class="example-sentence">She is in high school.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('full time')">🔊</button></td>
+            <td class="en-word">full time</td>
+            <td class="en-word">full</td>
+            <td class="en-word">time</td>
+            <td class="ar-word">دوام كامل</td>
+            <td class="example-sentence">I have a full time job.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('swimming pool')">🔊</button></td>
+            <td class="en-word">swimming pool</td>
+            <td class="en-word">swimming</td>
+            <td class="en-word">pool</td>
+            <td class="ar-word">مسبح</td>
+            <td class="example-sentence">The swimming pool is big.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('fast food')">🔊</button></td>
+            <td class="en-word">fast food</td>
+            <td class="en-word">fast</td>
+            <td class="en-word">food</td>
+            <td class="ar-word">وجبة سريعة</td>
+            <td class="example-sentence">Let's get fast food.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('parking lot')">🔊</button></td>
+            <td class="en-word">parking lot</td>
+            <td class="en-word">parking</td>
+            <td class="en-word">lot</td>
+            <td class="ar-word">موقف سيارات</td>
+            <td class="example-sentence">Where is the parking lot?</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="rule-box green">
+      <h4>💡 ملاحظة مهمة</h4>
+      <p>في المركبات المفتوحة، تُكتب الكلمتان بشكل منفصل في اللغة الإنجليزية لكنهما تعني شيئاً واحداً مختلفاً عن معنى كل كلمة على حدة.</p>
+    </div>
+    <div class="rule-box sky">
+      <h4>🎯 كيف تتعرف عليها؟</h4>
+      <p>عندما تجمع كلمتين معًا ويكون المعنى الناتج مختلفاً عن المعنى الأصلي لكل كلمة، فهذا مؤشر على أنك أمام مركبة مفتوحة.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== قسم المركبات المغلقة ===== -->
+<div class="section" id="section-closed">
+  <div class="section-header">
+    <h2>🔵 المركبات المغلقة - Closed Compounds</h2>
+    <p>كلمات مكونة من كلمتين اندمجتا في كلمة واحدة بدون مسافة</p>
+  </div>
+
+  <div class="rule-box teal">
+    <h4>🔍 ما هي المركبات المغلقة؟</h4>
+    <p>المركبات المغلقة (Closed Compounds) هي كلمات تتكون من كلمتين اندمجتا معاً في كلمة واحدة بدون مسافة بينهما. مثلاً: <strong>bedroom</strong> = bed (سرير) + room (غرفة) = غرفة النوم</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Word1 + Word2 → CombinedWord</div>
+    <div class="ar-formula">كلمة١ + كلمة٢ → كلمة واحدة مركبة (بدون مسافة)</div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">🏠 مركبات مغلقة - المنزل</div>
+    <div class="card-body" style="padding:0; overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            <th>الصوت</th>
+            <th>المركبة</th>
+            <th>الجزء ١</th>
+            <th>الجزء ٢</th>
+            <th>المعنى بالعربية</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('bedroom')">🔊</button></td>
+            <td class="en-word">bedroom</td>
+            <td class="en-word">bed</td>
+            <td class="en-word">room</td>
+            <td class="ar-word">غرفة النوم</td>
+            <td class="example-sentence">My bedroom is clean.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('classroom')">🔊</button></td>
+            <td class="en-word">classroom</td>
+            <td class="en-word">class</td>
+            <td class="en-word">room</td>
+            <td class="ar-word">الفصل الدراسي</td>
+            <td class="example-sentence">The classroom is big.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('bathroom')">🔊</button></td>
+            <td class="en-word">bathroom</td>
+            <td class="en-word">bath</td>
+            <td class="en-word">room</td>
+            <td class="ar-word">الحمام</td>
+            <td class="example-sentence">Where is the bathroom?</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('doorbell')">🔊</button></td>
+            <td class="en-word">doorbell</td>
+            <td class="en-word">door</td>
+            <td class="en-word">bell</td>
+            <td class="ar-word">جرس الباب</td>
+            <td class="example-sentence">The doorbell is ringing.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">🌿 مركبات مغلقة - الطبيعة</div>
+    <div class="card-body" style="padding:0; overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            <th>الصوت</th>
+            <th>المركبة</th>
+            <th>الجزء ١</th>
+            <th>الجزء ٢</th>
+            <th>المعنى بالعربية</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('sunflower')">🔊</button></td>
+            <td class="en-word">sunflower</td>
+            <td class="en-word">sun</td>
+            <td class="en-word">flower</td>
+            <td class="ar-word">عباد الشمس</td>
+            <td class="example-sentence">The sunflower is tall.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('rainbow')">🔊</button></td>
+            <td class="en-word">rainbow</td>
+            <td class="en-word">rain</td>
+            <td class="en-word">bow</td>
+            <td class="ar-word">قوس قزح</td>
+            <td class="example-sentence">I saw a rainbow.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('waterfall')">🔊</button></td>
+            <td class="en-word">waterfall</td>
+            <td class="en-word">water</td>
+            <td class="en-word">fall</td>
+            <td class="ar-word">شلال</td>
+            <td class="example-sentence">The waterfall is beautiful.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('sunshine')">🔊</button></td>
+            <td class="en-word">sunshine</td>
+            <td class="en-word">sun</td>
+            <td class="en-word">shine</td>
+            <td class="ar-word">أشعة الشمس</td>
+            <td class="example-sentence">I love the sunshine.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">🍽️ مركبات مغلقة - الطعام</div>
+    <div class="card-body" style="padding:0; overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            <th>الصوت</th>
+            <th>المركبة</th>
+            <th>الجزء ١</th>
+            <th>الجزء ٢</th>
+            <th>المعنى بالعربية</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('pancake')">🔊</button></td>
+            <td class="en-word">pancake</td>
+            <td class="en-word">pan</td>
+            <td class="en-word">cake</td>
+            <td class="ar-word">بان كيك / فطيرة مقلاة</td>
+            <td class="example-sentence">I eat pancakes for breakfast.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('popcorn')">🔊</button></td>
+            <td class="en-word">popcorn</td>
+            <td class="en-word">pop</td>
+            <td class="en-word">corn</td>
+            <td class="ar-word">فشار</td>
+            <td class="example-sentence">Let's eat popcorn.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('strawberry')">🔊</button></td>
+            <td class="en-word">strawberry</td>
+            <td class="en-word">straw</td>
+            <td class="en-word">berry</td>
+            <td class="ar-word">فراولة</td>
+            <td class="example-sentence">I like strawberry jam.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('watermelon')">🔊</button></td>
+            <td class="en-word">watermelon</td>
+            <td class="en-word">water</td>
+            <td class="en-word">melon</td>
+            <td class="ar-word">بطيخ</td>
+            <td class="example-sentence">Watermelon is sweet.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">👩‍👧 مركبات مغلقة - العائلة</div>
+    <div class="card-body" style="padding:0; overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            <th>الصوت</th>
+            <th>المركبة</th>
+            <th>الجزء ١</th>
+            <th>الجزء ٢</th>
+            <th>المعنى بالعربية</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('grandmother')">🔊</button></td>
+            <td class="en-word">grandmother</td>
+            <td class="en-word">grand</td>
+            <td class="en-word">mother</td>
+            <td class="ar-word">جدة</td>
+            <td class="example-sentence">My grandmother is kind.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('grandfather')">🔊</button></td>
+            <td class="en-word">grandfather</td>
+            <td class="en-word">grand</td>
+            <td class="en-word">father</td>
+            <td class="ar-word">جد</td>
+            <td class="example-sentence">My grandfather is old.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('grandson')">🔊</button></td>
+            <td class="en-word">grandson</td>
+            <td class="en-word">grand</td>
+            <td class="en-word">son</td>
+            <td class="ar-word">حفيد</td>
+            <td class="example-sentence">Her grandson is cute.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="rule-box green">
+      <h4>💡 كيف نعرف أنها مغلقة؟</h4>
+      <p>المركبات المغلقة تُكتب ككلمة واحدة بدون مسافة أو علامة ترقيم. معظم هذه الكلمات أصبحت معروفة ومستخدمة بشكل يومي.</p>
+    </div>
+    <div class="rule-box violet">
+      <h4>🎯 نمط تكوينها</h4>
+      <p>غالباً ما ت تكون المركبات المغلقة من اسم + اسم أو اسم + فعل أو صفة + اسم. معنى الكلمة الجديدة قد يكون حرفياً أو مجازياً.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== قسم المركبات النصف مغلقة ===== -->
+<div class="section" id="section-hyphenated">
+  <div class="section-header">
+    <h2>🟡 المركبات النصف مغلقة - Hyphenated Compounds</h2>
+    <p>كلمات مكونة من كلمتين مرتبطتين بعلامة القطع (-)</p>
+  </div>
+
+  <div class="rule-box teal">
+    <h4>🔍 ما هي المركبات النصف مغلقة؟</h4>
+    <p>المركبات النصف مغلقة (Hyphenated Compounds) هي كلمات تتكون من كلمتين أو أكثر مرتبطتين بعلامة القطع (-) (hyphen). مثلاً: <strong>mother-in-law</strong> = أم زوج/زوجة</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Word1 - Word2 - Word3</div>
+    <div class="ar-formula">كلمة١ - كلمة٢ - كلمة٣ (مرتبطة بعلامة القطع -)</div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">👤 مركبات نصف مغلقة - العلاقات والصفات</div>
+    <div class="card-body" style="padding:0; overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            <th>الصوت</th>
+            <th>المركبة</th>
+            <th>الأجزاء</th>
+            <th>المعنى بالعربية</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('mother-in-law')">🔊</button></td>
+            <td class="en-word">mother-in-law</td>
+            <td class="en-word">mother + in + law</td>
+            <td class="ar-word">أم الزوج/الزوجة</td>
+            <td class="example-sentence">My mother-in-law is nice.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('father-in-law')">🔊</button></td>
+            <td class="en-word">father-in-law</td>
+            <td class="en-word">father + in + law</td>
+            <td class="ar-word">أب الزوج/الزوجة</td>
+            <td class="example-sentence">My father-in-law is a doctor.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('brother-in-law')">🔊</button></td>
+            <td class="en-word">brother-in-law</td>
+            <td class="en-word">brother + in + law</td>
+            <td class="ar-word">أخ الزوج/الزوجة</td>
+            <td class="example-sentence">My brother-in-law visited us.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('sister-in-law')">🔊</button></td>
+            <td class="en-word">sister-in-law</td>
+            <td class="en-word">sister + in + law</td>
+            <td class="ar-word">أخت الزوج/الزوجة</td>
+            <td class="example-sentence">My sister-in-law is a teacher.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('well-known')">🔊</button></td>
+            <td class="en-word">well-known</td>
+            <td class="en-word">well + known</td>
+            <td class="ar-word">مشهور / معروف</td>
+            <td class="example-sentence">He is a well-known actor.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('six-year-old')">🔊</button></td>
+            <td class="en-word">six-year-old</td>
+            <td class="en-word">six + year + old</td>
+            <td class="ar-word">عمره ست سنوات</td>
+            <td class="example-sentence">She is a six-year-old girl.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('self-employed')">🔊</button></td>
+            <td class="en-word">self-employed</td>
+            <td class="en-word">self + employed</td>
+            <td class="ar-word">يعمل لحسابه</td>
+            <td class="example-sentence">She is self-employed.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('open-minded')">🔊</button></td>
+            <td class="en-word">open-minded</td>
+            <td class="en-word">open + minded</td>
+            <td class="ar-word">منفتح / واسع الأفق</td>
+            <td class="example-sentence">Be open-minded about new ideas.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="rule-box amber">
+      <h4>⚡ متى نستخدم علامة القطع (-)؟</h4>
+      <p>نستخدم علامة القطع (-) عندما تكون الكلمة الأولى صفة تصف الكلمة الثانية. مثلاً: <strong>well-known</strong> (مشهور) - الـ well تصف known. أيضاً نستخدمها مع علاقات العائلة مثل: mother-in-law.</p>
+    </div>
+    <div class="rule-box sky">
+      <h4>📝 قاعدة مهمة</h4>
+      <p>عندما نستخدم المركبة النصف مغلقة كصفة قبل اسم، نحتفظ بعلامة القطع (-). مثلاً: <strong>a six-year-old girl</strong>. لكن إذا جاءت بعد الاسم بدون علامة القطع: <strong>The girl is six years old.</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== قسم المركبات الشائعة ===== -->
+<div class="section" id="section-common">
+  <div class="section-header">
+    <h2>🟣 المركبات الشائعة في الحياة اليومية</h2>
+    <p>أكثر الكلمات المركبة استخداماً في المحادثات اليومية</p>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">💡 أدوات everyday</div>
+    <div class="card-body" style="padding:0; overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            <th>الصوت</th>
+            <th>المركبة</th>
+            <th>الجزء ١</th>
+            <th>الجزء ٢</th>
+            <th>النوع</th>
+            <th>المعنى بالعربية</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('keyboard')">🔊</button></td>
+            <td class="en-word">keyboard</td>
+            <td class="en-word">key</td>
+            <td class="en-word">board</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">لوحة مفاتيح</td>
+            <td class="example-sentence">Type on the keyboard.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('toothbrush')">🔊</button></td>
+            <td class="en-word">toothbrush</td>
+            <td class="en-word">tooth</td>
+            <td class="en-word">brush</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">فرشاة أسنان</td>
+            <td class="example-sentence">Use your toothbrush.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('notebook')">🔊</button></td>
+            <td class="en-word">notebook</td>
+            <td class="en-word">note</td>
+            <td class="en-word">book</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">دفتر ملاحظات</td>
+            <td class="example-sentence">Write in your notebook.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('handbook')">🔊</button></td>
+            <td class="en-word">handbook</td>
+            <td class="en-word">hand</td>
+            <td class="en-word">book</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">دليل</td>
+            <td class="example-sentence">Read the handbook.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('sunlight')">🔊</button></td>
+            <td class="en-word">sunlight</td>
+            <td class="en-word">sun</td>
+            <td class="en-word">light</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">ضوء الشمس</td>
+            <td class="example-sentence">Sunlight is good for you.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">⚽ رياضة وألعاب</div>
+    <div class="card-body" style="padding:0; overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            <th>الصوت</th>
+            <th>المركبة</th>
+            <th>الجزء ١</th>
+            <th>الجزء ٢</th>
+            <th>النوع</th>
+            <th>المعنى بالعربية</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('football')">🔊</button></td>
+            <td class="en-word">football</td>
+            <td class="en-word">foot</td>
+            <td class="en-word">ball</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">كرة قدم</td>
+            <td class="example-sentence">I play football.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('basketball')">🔊</button></td>
+            <td class="en-word">basketball</td>
+            <td class="en-word">basket</td>
+            <td class="en-word">ball</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">كرة سلة</td>
+            <td class="example-sentence">Basketball is fun.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('baseball')">🔊</button></td>
+            <td class="en-word">baseball</td>
+            <td class="en-word">base</td>
+            <td class="en-word">ball</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">كرة القاعدة</td>
+            <td class="example-sentence">Baseball is popular in the US.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('volleyball')">🔊</button></td>
+            <td class="en-word">volleyball</td>
+            <td class="en-word">volley</td>
+            <td class="en-word">ball</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">كرة طائرة</td>
+            <td class="example-sentence">Let's play volleyball.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="card-header">🎓 تعليم وعمل</div>
+    <div class="card-body" style="padding:0; overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr>
+            <th>الصوت</th>
+            <th>المركبة</th>
+            <th>الجزء ١</th>
+            <th>الجزء ٢</th>
+            <th>النوع</th>
+            <th>المعنى بالعربية</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('homework')">🔊</button></td>
+            <td class="en-word">homework</td>
+            <td class="en-word">home</td>
+            <td class="en-word">work</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">واجب منزلي</td>
+            <td class="example-sentence">I finished my homework.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('blackboard')">🔊</button></td>
+            <td class="en-word">blackboard</td>
+            <td class="en-word">black</td>
+            <td class="en-word">board</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">سبورة</td>
+            <td class="example-sentence">Write on the blackboard.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('textbook')">🔊</button></td>
+            <td class="en-word">textbook</td>
+            <td class="en-word">text</td>
+            <td class="en-word">book</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">كتاب مدرسي</td>
+            <td class="example-sentence">Open your textbook.</td>
+          </tr>
+          <tr>
+            <td><button class="sound-btn" onclick="speak('workshop')">🔊</button></td>
+            <td class="en-word">workshop</td>
+            <td class="en-word">work</td>
+            <td class="en-word">shop</td>
+            <td><span class="type-badge closed">مغلقة</span></td>
+            <td class="ar-word">ورشة عمل</td>
+            <td class="example-sentence">I attended a workshop.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ===== قسم التدريب ===== -->
+<div class="section" id="section-quiz">
+  <div class="section-header">
+    <h2>🔴 اختبار الكلمات المركبة</h2>
+    <p>اختبر معلوماتك عن أنواع الكلمات المركبة في الإنجليزية</p>
+  </div>
+
+  <div class="quiz-area" id="quizArea">
+    <div class="quiz-progress-bar">
+      <div class="quiz-progress-fill" id="quizProgressFill" style="width:0%"></div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="quiz-question" id="quizQuestion"></div>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+        <div class="quiz-nav">
+          <button class="btn btn-primary" id="btnNext" onclick="nextQuestion()" style="display:none;">التالي ←</button>
+          <button class="btn btn-primary" id="btnStart" onclick="startQuiz()">ابدأ الاختبار 🚀</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="app-footer">
+  جميع الحقوق محفوظة &copy; 2026 - الكلمات المركبة في الإنجليزية
+</footer>
+
+<script src="js/english-compounds.js"></script>
+</body>
+</html>

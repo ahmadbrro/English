@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الكلام المنقول - Reported Speech</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2310b981'/><text x='50' y='68' font-size='42' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>RS</text></svg>">
+<link rel="stylesheet" href="css/english-reported.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="index.html" style="width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,0.18);display:grid;place-items:center;font-size:18px;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.3);flex-shrink:0;" title="العودة للرئيسية">🏠</a>
+      <div class="brand-icon">RS</div>
+      <div>
+        <h1>الكلام المنقول - Reported Speech</h1>
+        <p class="brand-sub">إعداد وتصميم ahmad brro</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-tabs" id="nav-tabs">
+  <button class="nav-tab active" data-section="types">🟢 الأنواع</button>
+  <button class="nav-tab" data-section="pronouns">🔵 تغيير الضمائر</button>
+  <button class="nav-tab" data-section="tenses">🟡 تغيير الزمان</button>
+  <button class="nav-tab" data-section="special">🔴 الأفعال الخاصة</button>
+  <button class="nav-tab" data-section="practice">🟣 التدريب</button>
+</nav>
+
+<main>
+
+<!-- ===================== الأنواع ===================== -->
+<section class="section active" id="sec-types">
+  <div class="section-header">
+    <h2>🟢 أنواع الكلام المنقول - Types of Reported Speech</h2>
+    <p>الكلام المنقول هو نقل كلام شخص آخر بأحد طريقتين: مباشرة أو غير مباشرة</p>
+  </div>
+
+  <div class="rule-box green">
+    <h4>📐 الكلام المباشر (Direct Speech)</h4>
+    <p>نقل الكلام كما هو بالضبط بين علامتي تنصيص، مع الحفاظ على الأزمنة والضمائر كما هي.<br>
+    <strong style="direction:ltr;display:inline;">He said, "I am happy."</strong> ← قال: "أنا سعيد."</p>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📐 الكلام المنقول (Reported Speech)</h4>
+    <p>نقل الكلام بتعديل الزمان والضمائر وعلامات التنصيص، ويُستخدم مع فعل القول (said, told, asked...).<br>
+    <strong style="direction:ltr;display:inline;">He said (that) he was happy.</strong> ← قال إنه كان سعيداً.</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Subject + said/told + (that) + Subject + verb (changed)</div>
+    <div class="ar-formula">الموضوع + فعل القول + (أنّ) + الموضوع + الفعل المُعدّل</div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة على الكلام المنقول</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>الكلام المباشر</th><th>الكلام المنقول</th><th>الترجمة</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">"I am tired," she said.</td>
+            <td class="example-sentence">She said (that) she was tired.</td>
+            <td class="ar-word">قالت إنها كانت متعبة.</td>
+            <td><button class="sound-btn" onclick="speak('She said that she was tired.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"We play football," they said.</td>
+            <td class="example-sentence">They said (that) they played football.</td>
+            <td class="ar-word">قالوا إنهم كانوا يلعبون كرة القدم.</td>
+            <td><button class="sound-btn" onclick="speak('They said that they played football.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"I will help you," he said.</td>
+            <td class="example-sentence">He said (that) he would help me.</td>
+            <td class="ar-word">قال إنه سيساعدني.</td>
+            <td><button class="sound-btn" onclick="speak('He said that he would help me.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"I can swim," she said.</td>
+            <td class="example-sentence">She said (that) she could swim.</td>
+            <td class="ar-word">قالت إنها تستطيع السباحة.</td>
+            <td><button class="sound-btn" onclick="speak('She said that she could swim.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"I have finished," he said.</td>
+            <td class="example-sentence">He said (that) he had finished.</td>
+            <td class="ar-word">قال إنه كان قد أنهى.</td>
+            <td><button class="sound-btn" onclick="speak('He said that he had finished.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"I saw her yesterday," he said.</td>
+            <td class="example-sentence">He said (that) he had seen her the day before.</td>
+            <td class="ar-word">قال إنه كان قد رآها في اليوم السابق.</td>
+            <td><button class="sound-btn" onclick="speak('He said that he had seen her the day before.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="rule-box sky" style="margin-top:20px;">
+    <h4>💡 ملاحظة مهمة</h4>
+    <p>الكلام المنقول لا يضع علامات تنصيص، ولا يُستخدم فيه عادةً الفعل المساعد <strong>do/does/did</strong>.<br>
+   словнапример: "I don't like coffee" → He said (that) he didn't like coffee.</p>
+  </div>
+</section>
+
+<!-- ===================== تغيير الضمائر ===================== -->
+<section class="section" id="sec-pronouns">
+  <div class="section-header">
+    <h2>🔵 تغيير الضمائر - Pronoun Changes</h2>
+    <p>يجب تغيير الضمائر في الكلام المنقول لتناسب новый السياق</p>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📐 القاعدة الأساسية</h4>
+    <p>عند نقل الكلام، تتغير الضمائر حسب المتحدث والسامع الجديدين. Speak → Speaker becomes He/She</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">I → he/she | you → I/we/they | we → they | my → his/her | me → him/her</div>
+    <div class="ar-formula">تغيير الضمائر حسب السياق الجديد</div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 جدول تغيير الضمائر</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>الضمير (المباشر)</th><th>الضمير (المنقول)</th><th>مثال مباشر</th><th>مثال منقول</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">I</td>
+            <td class="example-sentence">he / she</td>
+            <td class="ar-word">قال: "أنا أدرس"</td>
+            <td class="en-word">He said he was studying.</td>
+            <td><button class="sound-btn" onclick="speak('He said he was studying.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">you</td>
+            <td class="example-sentence">I / we / they</td>
+            <td class="ar-word">قال: "أنت صديقي"</td>
+            <td class="en-word">He said I was his friend.</td>
+            <td><button class="sound-btn" onclick="speak('He said I was his friend.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">my</td>
+            <td class="example-sentence">his / her</td>
+            <td class="ar-word">قال: "بيتي كبير"</td>
+            <td class="en-word">He said his house was big.</td>
+            <td><button class="sound-btn" onclick="speak('He said his house was big.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">me</td>
+            <td class="example-sentence">him / her</td>
+            <td class="ar-word">قال: "أعطاني الكتاب"</td>
+            <td class="en-word">He said she gave him the book.</td>
+            <td><button class="sound-btn" onclick="speak('He said she gave him the book.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">we</td>
+            <td class="example-sentence">they</td>
+            <td class="ar-word">قالوا: "نحن سعداء"</td>
+            <td class="en-word">They said they were happy.</td>
+            <td><button class="sound-btn" onclick="speak('They said they were happy.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">our</td>
+            <td class="example-sentence">their</td>
+            <td class="ar-word">قالوا: "مدرستنا جميلة"</td>
+            <td class="en-word">They said their school was beautiful.</td>
+            <td><button class="sound-btn" onclick="speak('They said their school was beautiful.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">mine</td>
+            <td class="example-sentence">his / hers</td>
+            <td class="ar-word">قال: "هذا قلمي"</td>
+            <td class="en-word">He said it was his.</td>
+            <td><button class="sound-btn" onclick="speak('He said it was his.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">your</td>
+            <td class="example-sentence">my / our / their</td>
+            <td class="ar-word">قال: "هذا كتابك"</td>
+            <td class="en-word">He said it was my book.</td>
+            <td><button class="sound-btn" onclick="speak('He said it was my book.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 أمثلة تطبيقية على تغيير الضمائر</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>الكلام المباشر</th><th>الكلام المنقول</th><th>الشرح</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">"I love my family," she said.</td>
+            <td class="example-sentence">She said she loved her family.</td>
+            <td class="ar-word">I→she, my→her</td>
+            <td><button class="sound-btn" onclick="speak('She said she loved her family.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"You are my best friend," he told me.</td>
+            <td class="example-sentence">He told me I was his best friend.</td>
+            <td class="ar-word">you→I, my→his</td>
+            <td><button class="sound-btn" onclick="speak('He told me I was his best friend.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"We will help them," they said.</td>
+            <td class="example-sentence">They said they would help them.</td>
+            <td class="ar-word">we→they, them→them</td>
+            <td><button class="sound-btn" onclick="speak('They said they would help them.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"I saw your car," she said to him.</td>
+            <td class="example-sentence">She told him she had seen his car.</td>
+            <td class="ar-word">I→she, your→his, saw→had seen</td>
+            <td><button class="sound-btn" onclick="speak('She told him she had seen his car.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== تغيير الزمان ===================== -->
+<section class="section" id="sec-tenses">
+  <div class="section-header">
+    <h2>🟡 تغيير الزمان والمكان والPLACE - Tense, Time & Place Changes</h2>
+    <p>عند نقل الكلام، تتغير الأزمنة وكلمات الزمان والمكان</p>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📐 قاعدة تغيير الأزمنة (Backshift)</h4>
+    <p>عند نقل الكلام المنقول، يتقدم الزمن بدرجة واحدة للخلف في معظم الحالات.</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Present Simple → Past Simple | Present Continuous → Past Continuous</div>
+    <div class="ar-formula">المضارع البسيط ← الماضي البسيط | المضارع المستمر ← الماضي المستمر</div>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Present Perfect → Past Perfect | Will → Would | Can → Could | May → Might</div>
+    <div class="ar-formula">الماضي التام ← التام التام | سوف ← كان سوف | يستطيع ← كان يستطيع | ربما ← كان ربما</div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">📝 جدول تغيير الأزمنة</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>الزمن (المباشر)</th><th>الزمن (المنقول)</th><th>مثال مباشر</th><th>مثال منقول</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">Present Simple</td>
+            <td class="example-sentence">Past Simple</td>
+            <td class="ar-word">قال: "أنا أحب الشاي"</td>
+            <td class="en-word">He said he liked tea.</td>
+            <td><button class="sound-btn" onclick="speak('He said he liked tea.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">Present Continuous</td>
+            <td class="example-sentence">Past Continuous</td>
+            <td class="ar-word">قال: "أنا أدرس الآن"</td>
+            <td class="en-word">He said he was studying then.</td>
+            <td><button class="sound-btn" onclick="speak('He said he was studying then.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">Present Perfect</td>
+            <td class="example-sentence">Past Perfect</td>
+            <td class="ar-word">قال: "لقد أنهيت"</td>
+            <td class="en-word">He said he had finished.</td>
+            <td><button class="sound-btn" onclick="speak('He said he had finished.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">Past Simple</td>
+            <td class="example-sentence">Past Perfect</td>
+            <td class="ar-word">قال: "زرت القاهرة"</td>
+            <td class="en-word">He said he had visited Cairo.</td>
+            <td><button class="sound-btn" onclick="speak('He said he had visited Cairo.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">Will</td>
+            <td class="example-sentence">Would</td>
+            <td class="ar-word">قال: "سأساعدك"</td>
+            <td class="en-word">He said he would help me.</td>
+            <td><button class="sound-btn" onclick="speak('He said he would help me.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">Can</td>
+            <td class="example-sentence">Could</td>
+            <td class="ar-word">قال: "أستطيع السباحة"</td>
+            <td class="en-word">He said he could swim.</td>
+            <td><button class="sound-btn" onclick="speak('He said he could swim.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">May</td>
+            <td class="example-sentence">Might</td>
+            <td class="ar-word">قال: "ربما أحضر"</td>
+            <td class="en-word">He said he might come.</td>
+            <td><button class="sound-btn" onclick="speak('He said he might come.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">Must</td>
+            <td class="example-sentence">Had to</td>
+            <td class="ar-word">قال: "يجب أن أذهب"</td>
+            <td class="en-word">He said he had to go.</td>
+            <td><button class="sound-btn" onclick="speak('He said he had to go.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-header">🔄 جدول تغيير كلمات الزمان والمكان</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>المباشر</th><th>المنقول</th><th>مثال مباشر</th><th>مثال منقول</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">today</td>
+            <td class="example-sentence">that day</td>
+            <td class="ar-word">قال: "اليوم جميل"</td>
+            <td class="en-word">He said that day was beautiful.</td>
+            <td><button class="sound-btn" onclick="speak('He said that day was beautiful.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">yesterday</td>
+            <td class="example-sentence">the day before / the previous day</td>
+            <td class="ar-word">قال: "أمس رأيتها"</td>
+            <td class="en-word">He said he had seen her the day before.</td>
+            <td><button class="sound-btn" onclick="speak('He said he had seen her the day before.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">tomorrow</td>
+            <td class="example-sentence">the next day / the following day</td>
+            <td class="ar-word">قال: "غداً سأرحل"</td>
+            <td class="en-word">He said he would leave the next day.</td>
+            <td><button class="sound-btn" onclick="speak('He said he would leave the next day.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">now</td>
+            <td class="example-sentence">then / at that time</td>
+            <td class="ar-word">قال: "أنا أعمل الآن"</td>
+            <td class="en-word">He said he was working then.</td>
+            <td><button class="sound-btn" onclick="speak('He said he was working then.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">here</td>
+            <td class="example-sentence">there</td>
+            <td class="ar-word">قال: "هنا الجو جميل"</td>
+            <td class="en-word">He said the weather was nice there.</td>
+            <td><button class="sound-btn" onclick="speak('He said the weather was nice there.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">ago</td>
+            <td class="example-sentence">before / earlier</td>
+            <td class="ar-word">قال: "قبل أسبوع رأيتها"</td>
+            <td class="en-word">He said he had seen her a week before.</td>
+            <td><button class="sound-btn" onclick="speak('He said he had seen her a week before.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">this</td>
+            <td class="example-sentence">that</td>
+            <td class="ar-word">قال: "هذا الكتاب مفيد"</td>
+            <td class="en-word">He said that book was useful.</td>
+            <td><button class="sound-btn" onclick="speak('He said that book was useful.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">last week/month/year</td>
+            <td class="example-sentence">the week/month/year before</td>
+            <td class="ar-word">قال: "الشهر الماضي سافرت"</td>
+            <td class="en-word">He said he had traveled the month before.</td>
+            <td><button class="sound-btn" onclick="speak('He said he had traveled the month before.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">next week/month/year</td>
+            <td class="example-sentence">the following week/month/year</td>
+            <td class="ar-word">قال: "الشهر القادم سأرحل"</td>
+            <td class="en-word">He said he would travel the following month.</td>
+            <td><button class="sound-btn" onclick="speak('He said he would travel the following month.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="rule-box sky" style="margin-top:20px;">
+    <h4>⚠️ استثناء: لا يتقدم الزمن</h4>
+    <p>لا يتقدم الزمن في الحالات التالية:<br>
+    1. إذا كان الفعل المساعد <strong>would / could / should / might / ought to / had to</strong> (لا يتغير)<br>
+    2. إذا كان الكلام المنقول لا يزال صحيحاً في الحاضر: He said that the earth goes around the sun.<br>
+    3. مع <strong>I wish / If only</strong> و <strong>It's time</strong>: I wish I had more money.</p>
+  </div>
+</section>
+
+<!-- ===================== الأفعال الخاصة ===================== -->
+<section class="section" id="sec-special">
+  <div class="section-header">
+    <h2>🔴 الأفعال الخاصة والجمل الاستفهامية والأمرية</h2>
+    <p>الأفعال المستخدمة مع الكلام المنقول ونقل الأسئلة والأوامر</p>
+  </div>
+
+  <div class="rule-box orange">
+    <h4>📐 أفعال القول الخاصة</h4>
+    <p>بعض الأفعال تختلف في طريقة استخدامها مع الكلام المنقول:</p>
+  </div>
+
+  <div class="card" style="margin-top:10px;">
+    <div class="card-header">📝 أفعال القول المختلفة</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>الفعل</th><th>الطريقة</th><th>مثال</th><th>الترجمة</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">say</td>
+            <td class="example-sentence">say (that) + clause</td>
+            <td class="en-word">He said that he was tired.</td>
+            <td class="ar-word">قال إنه كان متعباً.</td>
+            <td><button class="sound-btn" onclick="speak('He said that he was tired.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">tell</td>
+            <td class="example-sentence">tell + person + (that) + clause</td>
+            <td class="en-word">He told me that he was tired.</td>
+            <td class="ar-word">أخبرني أنه كان متعباً.</td>
+            <td><button class="sound-btn" onclick="speak('He told me that he was tired.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">ask</td>
+            <td class="example-sentence">ask + person + (that/if) + clause</td>
+            <td class="en-word">She asked me if I was tired.</td>
+            <td class="ar-word">سألتني إذا كنت متعباً.</td>
+            <td><button class="sound-btn" onclick="speak('She asked me if I was tired.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">explain</td>
+            <td class="example-sentence">explain + (that) + clause</td>
+            <td class="en-word">He explained that the plan had failed.</td>
+            <td class="ar-word">شرح أن الخطة قد فشلت.</td>
+            <td><button class="sound-btn" onclick="speak('He explained that the plan had failed.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">suggest</td>
+            <td class="example-sentence">suggest + (that) + subject + base verb</td>
+            <td class="en-word">She suggested that he take a break.</td>
+            <td class="ar-word">اقترحت أن يستريح قليلاً.</td>
+            <td><button class="sound-btn" onclick="speak('She suggested that he take a break.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">advise</td>
+            <td class="example-sentence">advise + person + to-infinitive</td>
+            <td class="en-word">She advised him to rest.</td>
+            <td class="ar-word">نصحته أن يستريح.</td>
+            <td><button class="sound-btn" onclick="speak('She advised him to rest.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="rule-box green" style="margin-top:20px;">
+    <h4>📐 نقل الأسئلة الاستفهامية (Questions)</h4>
+    <p>إذا كان السؤال استفهاماً نعم/لا، نستخدم <strong>if / whether</strong>.<br>
+    إذا كان السؤال بضمير استفهام (who, what, where, when, why, how)، نحتفظ بالضمير بدون تغيير الترتيب.</p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Yes/No question: Verb + if/whether + S + verb (changed)</div>
+    <div class="ar-formula">السؤال بنعم/لا: فعل القول + if/whether + الموضوع + الفعل المُعدّل</div>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Wh-question: Verb + Wh-word + S + verb (changed)</div>
+    <div class="ar-formula">السؤال بالضمير: فعل القول + ضمير السؤال + الموضوع + الفعل المُعدّل</div>
+  </div>
+
+  <div class="card" style="margin-top:10px;">
+    <div class="card-header">📝 أمثلة على نقل الأسئلة</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>السؤال (المباشر)</th><th>السؤال (المنقول)</th><th>الشرح</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">"Are you tired?" she asked.</td>
+            <td class="example-sentence">She asked me if/whether I was tired.</td>
+            <td class="ar-word">سؤال نعم/لا → if/whether</td>
+            <td><button class="sound-btn" onclick="speak('She asked me if I was tired.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"Do you like tea?" he asked.</td>
+            <td class="example-sentence">She asked if I liked tea.</td>
+            <td class="ar-word">Do/does/did تُحذف</td>
+            <td><button class="sound-btn" onclick="speak('She asked if I liked tea.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"Where do you live?" he asked.</td>
+            <td class="example-sentence">He asked where I lived.</td>
+            <td class="ar-word">Where + do → where + lived</td>
+            <td><button class="sound-btn" onclick="speak('He asked where I lived.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"What are you doing?" she asked.</td>
+            <td class="example-sentence">She asked what I was doing.</td>
+            <td class="ar-word">are doing → was doing</td>
+            <td><button class="sound-btn" onclick="speak('She asked what I was doing.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"When did you arrive?" he asked.</td>
+            <td class="example-sentence">He asked when I had arrived.</td>
+            <td class="ar-word">did arrive → had arrived</td>
+            <td><button class="sound-btn" onclick="speak('He asked when I had arrived.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"Why are you late?" she asked.</td>
+            <td class="example-sentence">She asked why I was late.</td>
+            <td class="ar-word">are late → was late</td>
+            <td><button class="sound-btn" onclick="speak('She asked why I was late.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"How old are you?" he asked.</td>
+            <td class="example-sentence">He asked how old I was.</td>
+            <td class="ar-word">are you → was I</td>
+            <td><button class="sound-btn" onclick="speak('He asked how old I was.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="rule-box violet" style="margin-top:20px;">
+    <h4>📐 نقل الأوامر (Commands)</h4>
+    <p>الأوامر تُنقل باستخدام <strong>told/ordered/asked + person + to-infinitive</strong><br>
+    الأوامر السلبية: <strong>told/asked + person + not + to-infinitive</strong></p>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Subject + told/ordered/asked + object + to + V1 (affirmative)</div>
+    <div class="ar-formula">الموضوع + فعل القول + الشخص + to + الفعل الأساسي (أمري)</div>
+  </div>
+
+  <div class="formula-box">
+    <div class="en-formula">Subject + told/ordered/asked + object + not + to + V1 (negative)</div>
+    <div class="ar-formula">الموضوع + فعل القول + الشخص + not + to + الفعل الأساسي (نفي)</div>
+  </div>
+
+  <div class="card" style="margin-top:10px;">
+    <div class="card-header">📝 أمثلة على نقل الأوامر</div>
+    <div class="card-body" style="overflow-x:auto;">
+      <table class="lesson-table">
+        <thead>
+          <tr><th>الأمر (المباشر)</th><th>الأمر (المنقول)</th><th>الشرح</th><th>🔊</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="en-word">"Close the door," she said to him.</td>
+            <td class="example-sentence">She told him to close the door.</td>
+            <td class="ar-word">أمر موجب → told + to + V1</td>
+            <td><button class="sound-btn" onclick="speak('She told him to close the door.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"Don't be late," he said to her.</td>
+            <td class="example-sentence">He told her not to be late.</td>
+            <td class="ar-word">أمر سلبي → told + not + to + V1</td>
+            <td><button class="sound-btn" onclick="speak('He told her not to be late.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"Please help me," she said.</td>
+            <td class="example-sentence">She asked me to help her.</td>
+            <td class="ar-word">طلب مهذب → asked + to + V1</td>
+            <td><button class="sound-btn" onclick="speak('She asked me to help her.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"Stop talking!" the teacher said.</td>
+            <td class="example-sentence">The teacher told us to stop talking.</td>
+            <td class="ar-word">أمر قاطع → told + to + V1</td>
+            <td><button class="sound-btn" onclick="speak('The teacher told us to stop talking.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"Don't touch that!" he said.</td>
+            <td class="example-sentence">He told me not to touch that.</td>
+            <td class="ar-word">نهي → told + not + to + V1</td>
+            <td><button class="sound-btn" onclick="speak('He told me not to touch that.')">🔊</button></td>
+          </tr>
+          <tr>
+            <td class="en-word">"Let's go," she said.</td>
+            <td class="example-sentence">She suggested going.</td>
+            <td class="ar-word">اقتراح → suggested + V-ing</td>
+            <td><button class="sound-btn" onclick="speak('She suggested going.')">🔊</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="rule-box sky" style="margin-top:20px;">
+    <h4>⚠️ ملاحظة: القواعد الاستثنائية</h4>
+    <p>• مع <strong>suggest / recommend / insist</strong> يمكن استخدام <strong>should + V1</strong> أو <strong>V1 (بدون should)</strong>：<br>
+    He suggested that she (should) take a break.<br>
+    • لا يتغير الزمان إذا كان الكلام المنقول لا يزال صحيحاً: He said that water boils at 100°C.</p>
+  </div>
+</section>
+
+<!-- ===================== تدريب ===================== -->
+<section class="section" id="sec-practice">
+  <div class="section-header">
+    <h2>🟣 تدريب تفاعلي</h2>
+    <p>اختبر معلوماتك في الكلام المنقول</p>
+  </div>
+
+  <div class="quiz-container">
+    <div class="quiz-area" id="quiz-container">
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-fill"></div></div>
+      <div class="quiz-question" id="quiz-question"></div>
+      <div class="quiz-options" id="quiz-options"></div>
+      <div class="quiz-feedback" id="quiz-feedback"></div>
+      <div class="quiz-nav">
+        <button class="btn btn-primary" id="btn-next" style="display:none;">السؤال التالي ←</button>
+      </div>
+      <div class="quiz-result" id="quiz-result" style="display:none;"></div>
+      <div style="text-align:center;margin-top:16px;">
+        <button class="btn btn-ghost" id="btn-restart" style="display:none;">🔄 أعد التدريب</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="app-footer">إعداد وتصميم ahmad brro</footer>
+
+<script src="js/english-reported.js"></script>
+</body>
+</html>

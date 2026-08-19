@@ -33,6 +33,7 @@
     <button class="tab" data-view="saved">⭐ المحفوظات</button>
     <button class="tab" data-view="flashcards">🃏 البطاقات</button>
     <button class="tab" data-view="quiz">🎯 الاختبار</button>
+    <button class="tab" data-view="writing">✍ الكتابة</button>
   </div>
 </div>
 
@@ -175,6 +176,61 @@
         <div id="result-score" class="result-score"></div>
         <div id="result-details" class="result-details"></div>
         <button id="btn-quiz-retry" class="btn primary" style="display:block;margin:0 auto;">أعد الاختبار</button>
+      </div>
+    </div>
+
+    <!-- Writing View -->
+    <div class="view" id="view-writing">
+      <div class="panel" id="writing-setup">
+        <h3>✍ تدريب الكتابة</h3>
+        <div id="writing-last-score" style="text-align:center;color:var(--text-muted);margin-bottom:14px;font-weight:700;"></div>
+        <div class="form-row">
+          <label>النطاق:</label>
+          <select id="wr-scope">
+            <option value="all">جميع الكلمات</option>
+            <option value="saved">المحفوظات فقط</option>
+            <option value="section">قسم محدد</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>القسم:</label>
+          <select id="wr-section" hidden></select>
+        </div>
+        <div class="form-row">
+          <label>طريقة الكتابة:</label>
+          <select id="wr-type">
+            <option value="word">كتابة كلمة</option>
+            <option value="sentence">كتابة جملة</option>
+          </select>
+        </div>
+        <div class="form-row" style="display:none;">
+          <label>عدد الأسئلة:</label>
+          <input type="number" id="wr-count" value="10" min="1" max="100">
+        </div>
+        <div class="form-row">
+          <button id="btn-wr-start" class="btn primary">ابدأ التدريب</button>
+        </div>
+      </div>
+      <div class="panel quiz-area" id="wr-area" hidden>
+        <button id="btn-wr-back" class="btn ghost" style="display:block;margin-bottom:16px;">⚙ خروج من التدريب</button>
+        <div id="wr-progress-text" class="quiz-progress-text" style="text-align:center;"></div>
+        <div id="wr-prompt" class="quiz-question" style="font-size:26px;margin-bottom:8px;"></div>
+        <div id="wr-prompt-sub" class="quiz-question-sub" style="margin-bottom:6px;"></div>
+        <div style="text-align:center;margin-bottom:18px;">
+          <button id="btn-wr-speak" class="sound-btn" title="استمع" style="width:48px;height:48px;font-size:22px;">🔊</button>
+        </div>
+        <div style="display:flex;gap:10px;justify-content:center;margin-bottom:16px;flex-wrap:wrap;">
+          <input type="text" id="wr-input" class="search-input" style="max-width:420px;flex:1;text-align:center;font-size:20px;font-weight:700;letter-spacing:1px;" placeholder="اكتب هنا..." autocomplete="off" dir="ltr">
+          <button id="btn-wr-check" class="btn primary" style="font-size:16px;">تحقق ✓</button>
+        </div>
+        <div id="wr-result" style="text-align:center;min-height:60px;margin-bottom:10px;"></div>
+        <div id="wr-feedback" class="quiz-feedback"></div>
+        <button id="btn-wr-next" class="btn primary" hidden style="display:block;margin:20px auto 0;">السؤال التالي</button>
+      </div>
+      <div class="panel" id="wr-result-panel" hidden>
+        <div id="wr-result-score" class="result-score"></div>
+        <div id="wr-result-details" class="result-details"></div>
+        <button id="btn-wr-retry" class="btn primary" style="display:block;margin:0 auto;">أعد التدريب</button>
       </div>
     </div>
 
