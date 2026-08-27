@@ -1,0 +1,128 @@
+/* ---------- Reading practice ---------- */
+.reading-intro { margin: -8px 0 20px; }
+.my-vocabulary-panel { margin-bottom: 20px; }
+.my-word-form .form-row:last-child { margin-bottom: 0; }
+.my-word-form input[type="text"] {
+  flex: 1;
+  min-width: 180px;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+.my-word-form input[type="text"]:focus { border-color: var(--primary); }
+.my-vocabulary-grid { margin: 0 auto; max-width: 900px; }
+.my-word-actions { display: flex; gap: 6px; align-items: center; }
+.my-word-delete { background: #fee2e2; border-color: #fecaca; font-size: 14px; }
+.error-instruction { text-align: center; color: var(--text-muted); font-weight: 700; margin-bottom: 12px; }
+.error-sentence {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px dashed var(--danger);
+  border-radius: var(--radius-sm);
+  background: #fff7ed;
+  color: var(--text);
+  font-size: 23px;
+  font-weight: 800;
+  text-align: center;
+}
+.error-answer-row { display: flex; gap: 10px; align-items: center; }
+.error-answer-row .search-input { max-width: none; min-width: 0; }
+#errors-input { direction: ltr; text-align: left; }
+#btn-errors-next, #btn-errors-retry { display: block; margin: 20px auto 0; }
+
+@media (max-width: 700px) {
+  .error-answer-row { flex-direction: column; align-items: stretch; }
+  .error-answer-row .btn { justify-content: center; }
+  .error-sentence { font-size: 19px; padding: 16px 10px; }
+}
+.reading-picker {
+  margin: 4px 0 20px;
+  padding: 14px;
+  background: var(--bg-card-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.reading-picker-head, .reading-result-head, .reading-translation-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.reading-picker-head { margin-bottom: 12px; }
+.reading-picker-head .btn { padding: 7px 12px; font-size: 12px; }
+.reading-word-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 8px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.reading-word-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 10px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  direction: ltr;
+}
+.reading-word-option input { accent-color: var(--primary); }
+.reading-word-option span { font-weight: 700; color: var(--primary-dark); }
+.reading-word-option small { color: var(--text-muted); margin-inline-start: auto; direction: rtl; }
+.reading-result {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+.reading-result-head h3 { color: var(--primary-dark); margin: 0; }
+.reading-text {
+  margin: 22px 0;
+  padding: 28px 24px;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--primary-light), #fff);
+  text-align: center;
+  line-height: 2.4;
+  font-size: 21px;
+  font-weight: 600;
+  text-align: left;
+  direction: ltr;
+}
+.reading-target {
+  background: #fde68a;
+  color: #78350f;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+.reading-translation-head { border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+.reading-translation-head h4 { color: var(--primary-dark); font-size: 18px; }
+.reading-translation { display: grid; gap: 7px; margin-top: 12px; }
+.reading-translation-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.reading-number { color: var(--text-muted); font-size: 12px; min-width: 22px; }
+.reading-translation-item span:nth-of-type(2) { min-width: 220px; color: var(--primary-dark); font-weight: 700; }
+.reading-translation-item span:not(.reading-number) { color: var(--text-muted); }
+.reading-translation-item .sound-btn { margin-inline-start: auto; }
+
+@media (max-width: 700px) {
+  .reading-result { padding: 18px 16px; }
+  .reading-result-head { align-items: stretch; flex-direction: column; }
+  .reading-result-head .btn { justify-content: center; }
+  .reading-text { padding: 22px 12px; }
+  .reading-text { font-size: 18px; }
+  .reading-translation-item span:nth-of-type(2) { min-width: 110px; }
+}

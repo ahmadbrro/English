@@ -179,6 +179,9 @@ main { max-width: 1280px; margin: 0 auto; padding: 24px 20px 60px; }
 /* ---------- Dictionary layout ---------- */
 .dict-layout { display: grid; grid-template-columns: 260px 1fr; gap: 20px; align-items: start; }
 
+.dict-layout:has(#view-dict:not(.active)) { grid-template-columns: 1fr; }
+.dict-layout:has(#view-dict:not(.active)) .sections-sidebar { display: none; }
+
 .sections-sidebar {
   background: #fff;
   border-radius: var(--radius);
@@ -224,6 +227,8 @@ main { max-width: 1280px; margin: 0 auto; padding: 24px 20px 60px; }
 
 /* Mobile sections drawer (hidden on desktop) */
 #btn-sections-drawer, .sections-drawer, .drawer-overlay { display: none; }
+
+.app-header:has(~ .tabs-bar + main #view-dict:not(.active)) #btn-sections-drawer { display: none; }
 
 .sec-count {
   background: var(--bg-card-soft);

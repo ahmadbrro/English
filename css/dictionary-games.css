@@ -1,0 +1,29 @@
+.time-trial-panel, .matching-panel { max-width: 900px; text-align: center; }
+.game-settings-btn { display: flex; margin-bottom: 14px; }
+#btn-time-trial-settings, #btn-matching-settings { display: flex !important; align-items: center; }
+.time-trial-record { margin: 18px 0; color: var(--text-muted); }
+.time-trial-status, .matching-status { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: var(--text-muted); font-weight: 700; margin-bottom: 24px; }
+.time-trial-status strong, .matching-status strong { color: var(--primary-dark); font-size: 20px; }
+#time-trial-time, #matching-time { color: var(--danger); }
+.matching-status #btn-matching-finish { margin-inline-start: auto; }
+.time-trial-word { margin: 24px 0; font-size: 38px; font-weight: 800; color: var(--primary-dark); }
+.time-trial-panel .quiz-options { max-width: 680px; margin: 0 auto; }
+.matching-board { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 25%; min-height: 360px; padding: 10px 0; }
+.matching-column { display: flex; flex-direction: column; justify-content: space-around; gap: 12px; z-index: 2; }
+.matching-item { width: 100%; min-height: 52px; padding: 12px 16px; border: 2px solid var(--border); border-radius: var(--radius-sm); background: #fff; color: var(--text); font: inherit; font-weight: 800; cursor: grab; touch-action: none; box-shadow: var(--shadow); }
+.matching-item:active { cursor: grabbing; }
+.matching-item:hover, .matching-item.dragging { border-color: var(--primary); background: var(--primary-light); }
+.matching-item.selected { border-color: var(--primary); background: var(--primary-light); box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); }
+.matching-finished .matching-item { pointer-events: none; }
+.matching-item.matched { border-color: var(--success); background: #ecfdf5; color: #047857; cursor: default; }
+.matching-item.wrong { border-color: var(--danger); background: #fee2e2; animation: matching-shake .25s ease; }
+.matching-lines { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; z-index: 1; }
+.matching-line { stroke: var(--success); stroke-width: 4; stroke-linecap: round; }
+.matching-result-wrong { stroke: var(--danger); }
+.matching-draft-line { stroke: var(--primary); stroke-width: 3; stroke-dasharray: 8 6; stroke-linecap: round; }
+@keyframes matching-shake { 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+@media (max-width: 700px) {
+  .time-trial-word { font-size: 30px; }
+  .matching-board { gap: 12%; min-height: 430px; }
+  .matching-item { padding: 10px 7px; font-size: 14px; }
+}

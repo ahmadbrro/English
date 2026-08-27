@@ -6,6 +6,8 @@
 <title>قاموس الكلمات الإنجليزية</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>EN</text></svg>">
 <link rel="stylesheet" href="css/dictionary.css">
+<link rel="stylesheet" href="css/dictionary-reading.css">
+<link rel="stylesheet" href="css/dictionary-games.css">
 </head>
 <body>
 
@@ -30,10 +32,15 @@
 <div class="tabs-bar" style="background:var(--bg-soft);border-bottom:1px solid var(--border);position:sticky;top:74px;z-index:40;">
   <div class="tabs" style="max-width:1280px;margin:0 auto;padding:10px 20px;display:flex;gap:8px;flex-wrap:wrap;">
     <button class="tab active" data-view="dict">📖 القاموس</button>
+    <button class="tab" data-view="my-vocabulary">📝 قائمة كلماتي</button>
     <button class="tab" data-view="saved">⭐ المحفوظات</button>
     <button class="tab" data-view="flashcards">🃏 البطاقات</button>
     <button class="tab" data-view="quiz">🎯 الاختبار</button>
+    <button class="tab" data-view="errors">🛠 الأخطاء الشائعة</button>
+    <button class="tab" data-view="time-trial">⏱ سباق الزمن</button>
+    <button class="tab" data-view="matching">🔗 توصيل الكلمات</button>
     <button class="tab" data-view="writing">✍ الكتابة</button>
+    <button class="tab" data-view="reading">📖 القراءة</button>
   </div>
 </div>
 
@@ -67,6 +74,29 @@
       <div id="saved-grid" class="word-grid"></div>
       <div id="saved-empty" class="empty-state" hidden>لا توجد كلمات محفوظة بعد</div>
     </div>
+   
+     <!-- My Vocabulary View -->
+     <div class="view" id="view-my-vocabulary">
+       <div class="panel my-vocabulary-panel">
+         <h3>📝 قائمة كلماتي</h3>
+         <p class="hint">أضف كلمات تسمعها في حياتك اليومية واحفظ ترجمتها لتعود إليها لاحقًا.</p>
+         <form id="my-word-form" class="my-word-form">
+           <div class="form-row">
+             <label for="my-word-en">الكلمة الإنجليزية:</label>
+             <input id="my-word-en" type="text" maxlength="80" placeholder="اكتب الكلمة أو العبارة بالإنجليزية" dir="ltr" autocomplete="off" required>
+           </div>
+           <div class="form-row">
+             <label for="my-word-ar">الترجمة العربية:</label>
+             <input id="my-word-ar" type="text" maxlength="120" placeholder="اكتب الترجمة بالعربية" required>
+           </div>
+           <div class="form-row">
+             <button class="btn primary" type="submit">+ إضافة إلى قائمتي</button>
+           </div>
+         </form>
+       </div>
+       <div id="my-vocabulary-grid" class="word-grid my-vocabulary-grid"></div>
+       <div id="my-vocabulary-empty" class="empty-state" hidden>لم تضف كلمات إلى قائمتك بعد</div>
+     </div>
 
     <!-- Flashcards View -->
     <div class="view" id="view-flashcards">
@@ -144,6 +174,7 @@
           <select id="quiz-type">
             <option value="translation">ترجمة</option>
             <option value="sentence">إكمال جملة</option>
+            <option value="relations">المرادفات والمتضادات</option>
           </select>
         </div>
         <div class="form-row" id="quiz-direction-row">
@@ -176,6 +207,107 @@
         <div id="result-score" class="result-score"></div>
         <div id="result-details" class="result-details"></div>
         <button id="btn-quiz-retry" class="btn primary" style="display:block;margin:0 auto;">أعد الاختبار</button>
+      </div>
+    </div>
+
+    <!-- Common Errors View -->
+    <div class="view" id="view-errors">
+      <div class="panel" id="errors-setup">
+        <h3>🛠 اختبار الأخطاء الشائعة</h3>
+        <p class="hint">اقرأ الجملة، اكتشف الخطأ النحوي أو الإملائي، ثم اكتب الجملة صحيحة.</p>
+        <div class="form-row">
+          <label>عدد الأسئلة:</label>
+          <input type="number" id="errors-count" value="10" min="1" max="20">
+        </div>
+        <div class="form-row">
+          <button id="btn-errors-start" class="btn primary" type="button">ابدأ الاختبار</button>
+        </div>
+      </div>
+      <div class="panel quiz-area" id="errors-area" hidden>
+        <div id="errors-progress" class="quiz-progress-text"></div>
+        <div class="error-instruction">اكتشف الخطأ وصحح الجملة:</div>
+        <div id="errors-sentence" class="error-sentence" dir="ltr"></div>
+        <div class="error-answer-row">
+          <input id="errors-input" class="search-input" type="text" dir="ltr" placeholder="اكتب الجملة الصحيحة هنا..." autocomplete="off">
+          <button id="btn-errors-check" class="btn primary" type="button">تحقق ✓</button>
+        </div>
+        <div id="errors-feedback" class="quiz-feedback"></div>
+        <button id="btn-errors-next" class="btn primary" type="button" hidden>السؤال التالي</button>
+      </div>
+      <div class="panel" id="errors-result" hidden>
+        <div id="errors-score" class="result-score"></div>
+        <div id="errors-result-message" class="result-details"></div>
+        <button id="btn-errors-retry" class="btn primary" type="button">أعد الاختبار</button>
+      </div>
+    </div>
+
+    <!-- Time Trial View -->
+    <div class="view" id="view-time-trial">
+      <div class="panel time-trial-panel" id="time-trial-setup">
+        <h3>⏱ سباق الزمن</h3>
+        <p class="hint">لديك دقيقة واحدة. أجب عن أكبر عدد ممكن من الكلمات وسجل رقمًا قياسيًا جديدًا.</p>
+        <div class="time-trial-record">الرقم القياسي: <strong id="time-trial-best">0</strong> نقطة</div>
+        <div class="form-row game-scope-row">
+          <label>النطاق:</label>
+          <select id="time-trial-scope">
+            <option value="all">جميع الكلمات</option>
+            <option value="saved">المحفوظات فقط</option>
+            <option value="section">قسم محدد</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>القسم:</label>
+          <select id="time-trial-section" hidden></select>
+        </div>
+        <button id="btn-time-trial-start" class="btn primary" type="button">ابدأ السباق</button>
+      </div>
+      <div class="panel time-trial-panel" id="time-trial-area" hidden>
+        <button id="btn-time-trial-settings" class="btn ghost game-settings-btn" type="button">⚙ الإعدادات</button>
+        <div class="time-trial-status"><span>الوقت: <strong id="time-trial-time">60</strong></span><span>النقاط: <strong id="time-trial-score">0</strong></span></div>
+        <div id="time-trial-word" class="time-trial-word" dir="ltr"></div>
+        <div id="time-trial-options" class="quiz-options"></div>
+        <div id="time-trial-feedback" class="quiz-feedback"></div>
+      </div>
+      <div class="panel time-trial-panel" id="time-trial-result" hidden>
+        <div id="time-trial-result-score" class="result-score"></div>
+        <div id="time-trial-result-message" class="result-details"></div>
+        <button id="btn-time-trial-retry" class="btn primary" type="button">أعد السباق</button>
+      </div>
+    </div>
+
+    <!-- Matching View -->
+    <div class="view" id="view-matching">
+      <div class="panel matching-panel" id="matching-setup">
+        <h3>🔗 توصيل الكلمات</h3>
+        <p class="hint">اسحب خطًا من الكلمة الإنجليزية إلى ترجمتها، أو اضغط الكلمة ثم اضغط ترجمتها الصحيحة. عند الانتهاء اضغط زر عرض النتيجة.</p>
+        <div class="form-row game-scope-row">
+          <label>النطاق:</label>
+          <select id="matching-scope">
+            <option value="all">جميع الكلمات</option>
+            <option value="saved">المحفوظات فقط</option>
+            <option value="section">قسم محدد</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>القسم:</label>
+          <select id="matching-section" hidden></select>
+        </div>
+        <button id="btn-matching-start" class="btn primary" type="button">ابدأ اللعبة</button>
+      </div>
+      <div class="panel matching-panel" id="matching-area" hidden>
+        <button id="btn-matching-settings" class="btn ghost game-settings-btn" type="button">⚙ الإعدادات</button>
+        <div class="matching-status"><button id="btn-matching-finish" class="btn primary" type="button">إنهاء الجولة وعرض النتيجة</button></div>
+        <div id="matching-board" class="matching-board">
+          <svg id="matching-lines" class="matching-lines" aria-hidden="true"></svg>
+          <div id="matching-english" class="matching-column"></div>
+          <div id="matching-arabic" class="matching-column"></div>
+        </div>
+        <div id="matching-feedback" class="quiz-feedback"></div>
+      </div>
+      <div class="panel matching-panel" id="matching-result" hidden>
+        <div id="matching-result-score" class="result-score"></div>
+        <div id="matching-result-message" class="result-details"></div>
+        <button id="btn-matching-retry" class="btn primary" type="button">تحدٍّ جديد</button>
       </div>
     </div>
 
@@ -234,6 +366,65 @@
       </div>
     </div>
 
+    <!-- Reading View -->
+    <div class="view" id="view-reading">
+      <div class="panel reading-panel" id="reading-setup">
+        <h3>📖 تدريب القراءة</h3>
+        <p class="hint reading-intro">أنشئ نصًا عشوائيًا من أمثلة القاموس، وستظهر الكلمات التي اخترتها داخله.</p>
+        <div class="form-row">
+          <label>النطاق:</label>
+          <select id="rd-scope">
+            <option value="saved" selected>المحفوظات فقط</option>
+            <option value="section">قسم محدد</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>القسم:</label>
+          <select id="rd-section" hidden></select>
+        </div>
+        <div class="form-row">
+          <label>طول النص:</label>
+          <select id="rd-length">
+            <option value="50">قصير</option>
+            <option value="100" selected>متوسط</option>
+            <option value="200">طويل</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>تكرار الكلمات:</label>
+          <select id="rd-repeat">
+            <option value="once">ذكر كل كلمة مرة واحدة</option>
+            <option value="repeat">السماح بتكرار الكلمات</option>
+          </select>
+        </div>
+        <div id="rd-picker" class="reading-picker" hidden>
+          <div class="reading-picker-head">
+            <strong>اختر الكلمات من القسم</strong>
+            <button id="rd-select-all" class="btn ghost" type="button">تحديد الكل</button>
+          </div>
+          <div id="rd-word-list" class="reading-word-list"></div>
+        </div>
+        <div class="form-row">
+          <button id="btn-rd-start" class="btn primary">إنشاء نص القراءة</button>
+        </div>
+      </div>
+      <div class="reading-result" id="reading-result" hidden>
+        <div class="reading-result-head">
+          <div>
+            <h3 id="rd-title">النص المولّد</h3>
+            <p id="rd-count" class="hint"></p>
+          </div>
+          <button id="btn-rd-speak" class="btn primary" type="button">🔊 استمع للنص</button>
+        </div>
+        <div id="rd-text" class="reading-text" dir="ltr"></div>
+        <div class="reading-translation-head">
+          <h4>ترجمة الكلمات المختارة</h4>
+          <button id="btn-rd-settings" class="btn ghost" type="button">⚙ تغيير الكلمات</button>
+        </div>
+        <div id="rd-translation" class="reading-translation"></div>
+      </div>
+    </div>
+
   </div>
 </main>
 
@@ -262,5 +453,11 @@
 <div id="toast" class="toast" hidden></div>
 
 <script src="js/dictionary.js"></script>
+<script src="js/dictionary-reading.js"></script>
+<script src="js/dictionary-default-section.js"></script>
+<script src="js/my-vocabulary.js"></script>
+<script src="js/dictionary-relations.js"></script>
+<script src="js/common-errors.js"></script>
+<script src="js/dictionary-games.js"></script>
 </body>
 </html>
