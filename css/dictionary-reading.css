@@ -5,6 +5,7 @@
 .my-word-form input[type="text"] {
   flex: 1;
   min-width: 180px;
+  width: 100%;
   padding: 11px 14px;
   border: 1.5px solid var(--border);
   border-radius: var(--radius-sm);
@@ -16,6 +17,7 @@
 .my-vocabulary-grid { margin: 0 auto; max-width: 900px; }
 .my-word-actions { display: flex; gap: 6px; align-items: center; }
 .my-word-delete { background: #fee2e2; border-color: #fecaca; font-size: 14px; }
+.my-word-card .word-main { overflow-wrap: anywhere; }
 .error-instruction { text-align: center; color: var(--text-muted); font-weight: 700; margin-bottom: 12px; }
 .error-sentence {
   padding: 20px;
@@ -34,6 +36,17 @@
 #btn-errors-next, #btn-errors-retry { display: block; margin: 20px auto 0; }
 
 @media (max-width: 700px) {
+  .my-vocabulary-panel { padding: 20px 15px; }
+  .my-vocabulary-panel h3 { text-align: center; font-size: 19px; }
+  .my-vocabulary-panel .hint { text-align: center; line-height: 1.8; }
+  .my-word-form { display: grid; gap: 12px; }
+  .my-word-form .form-row { margin-bottom: 0; gap: 6px; }
+  .my-word-form .form-row:last-child { margin-top: 2px; }
+  .my-word-form input[type="text"] { min-width: 0; min-height: 46px; }
+  .my-word-form .btn { width: 100%; min-height: 46px; justify-content: center; }
+  .my-word-card .word-card-head { align-items: center; }
+  .my-word-card .word-main { min-width: 0; }
+  .my-word-actions { margin-inline-start: auto; flex-shrink: 0; }
   .error-answer-row { flex-direction: column; align-items: stretch; }
   .error-answer-row .btn { justify-content: center; }
   .error-sentence { font-size: 19px; padding: 16px 10px; }

@@ -34,13 +34,8 @@
     <button class="tab active" data-view="dict">📖 القاموس</button>
     <button class="tab" data-view="my-vocabulary">📝 قائمة كلماتي</button>
     <button class="tab" data-view="saved">⭐ المحفوظات</button>
-    <button class="tab" data-view="flashcards">🃏 البطاقات</button>
-    <button class="tab" data-view="quiz">🎯 الاختبار</button>
-    <button class="tab" data-view="errors">🛠 الأخطاء الشائعة</button>
-    <button class="tab" data-view="time-trial">⏱ سباق الزمن</button>
-    <button class="tab" data-view="matching">🔗 توصيل الكلمات</button>
-    <button class="tab" data-view="writing">✍ الكتابة</button>
-    <button class="tab" data-view="reading">📖 القراءة</button>
+    <button class="tab" data-view="focus">🎯 التركيز والمراجعة</button>
+    <button class="tab" data-view="training">🧠 التدريبات والأدوات</button>
   </div>
 </div>
 
@@ -73,6 +68,37 @@
       </div>
       <div id="saved-grid" class="word-grid"></div>
       <div id="saved-empty" class="empty-state" hidden>لا توجد كلمات محفوظة بعد</div>
+    </div>
+
+    <!-- Focus View -->
+    <div class="view" id="view-focus">
+      <div class="toolbar">
+        <div class="view-title">🎯 التركيز والمراجعة</div>
+        <div class="toolbar-actions">
+          <button id="btn-clear-focus" class="btn danger">🗑 مسح القائمة</button>
+        </div>
+      </div>
+      <p class="hint focus-hint">ضع الكلمات التي تريد مراجعتها هنا، ثم أزلها عند إتقانها.</p>
+      <div id="focus-grid" class="word-grid"></div>
+      <div id="focus-empty" class="empty-state" hidden>لا توجد كلمات قيد التركيز بعد</div>
+    </div>
+
+    <!-- Training Hub -->
+    <div class="view" id="view-training">
+      <div class="training-hero">
+        <span class="training-kicker">مساحة التعلم</span>
+        <h2>اختر طريقة التدريب</h2>
+        <p>كل أدواتك التعليمية في مكان واحد، اختر التمرين المناسب لهدفك الآن.</p>
+      </div>
+      <div class="training-grid">
+        <button class="training-card training-card-violet" data-view="flashcards"><span class="training-icon">🃏</span><strong>البطاقات التعليمية</strong><small>راجع الكلمات بسرعة</small></button>
+        <button class="training-card training-card-blue" data-view="quiz"><span class="training-icon">🎯</span><strong>الاختبار</strong><small>اختبر فهمك وترجمتك</small></button>
+        <button class="training-card training-card-rose" data-view="errors"><span class="training-icon">🛠</span><strong>الأخطاء الشائعة</strong><small>صحح الجمل بنفسك</small></button>
+        <button class="training-card training-card-amber" data-view="time-trial"><span class="training-icon">⏱</span><strong>سباق الزمن</strong><small>تحدَّ نفسك خلال دقيقة</small></button>
+        <button class="training-card training-card-teal" data-view="matching"><span class="training-icon">🔗</span><strong>توصيل الكلمات</strong><small>طابق الكلمة مع ترجمتها</small></button>
+        <button class="training-card training-card-green" data-view="writing"><span class="training-icon">✍</span><strong>تدريب الكتابة</strong><small>اكتب الكلمات والجمل</small></button>
+        <button class="training-card training-card-sky" data-view="reading"><span class="training-icon">📖</span><strong>تدريب القراءة</strong><small>اقرأ نصوصًا من القاموس</small></button>
+      </div>
     </div>
    
      <!-- My Vocabulary View -->
@@ -108,6 +134,7 @@
             <select id="fc-scope">
               <option value="all">جميع الكلمات</option>
               <option value="saved">المحفوظات فقط</option>
+              <option value="focus">التركيز والمراجعة</option>
               <option value="section">قسم محدد</option>
             </select>
           </div>
@@ -161,6 +188,7 @@
           <select id="quiz-scope">
             <option value="all">جميع الكلمات</option>
             <option value="saved">المحفوظات فقط</option>
+            <option value="focus">التركيز والمراجعة</option>
             <option value="section">قسم محدد</option>
             <option value="missed">الكلمات الخاطئة</option>
           </select>
@@ -252,6 +280,7 @@
           <select id="time-trial-scope">
             <option value="all">جميع الكلمات</option>
             <option value="saved">المحفوظات فقط</option>
+            <option value="focus">التركيز والمراجعة</option>
             <option value="section">قسم محدد</option>
           </select>
         </div>
@@ -285,6 +314,7 @@
           <select id="matching-scope">
             <option value="all">جميع الكلمات</option>
             <option value="saved">المحفوظات فقط</option>
+            <option value="focus">التركيز والمراجعة</option>
             <option value="section">قسم محدد</option>
           </select>
         </div>
@@ -321,6 +351,7 @@
           <select id="wr-scope">
             <option value="all">جميع الكلمات</option>
             <option value="saved">المحفوظات فقط</option>
+            <option value="focus">التركيز والمراجعة</option>
             <option value="section">قسم محدد</option>
           </select>
         </div>
@@ -375,6 +406,7 @@
           <label>النطاق:</label>
           <select id="rd-scope">
             <option value="saved" selected>المحفوظات فقط</option>
+            <option value="focus">التركيز والمراجعة</option>
             <option value="section">قسم محدد</option>
           </select>
         </div>
@@ -453,6 +485,7 @@
 <div id="toast" class="toast" hidden></div>
 
 <script src="js/dictionary.js"></script>
+<script src="js/focus-review.js"></script>
 <script src="js/dictionary-reading.js"></script>
 <script src="js/dictionary-default-section.js"></script>
 <script src="js/my-vocabulary.js"></script>

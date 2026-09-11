@@ -30,6 +30,7 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   overscroll-behavior-y: none;
+  overflow-x: hidden;
 }
 
 button, input, select, textarea, a { touch-action: manipulation; }
@@ -113,6 +114,7 @@ main { max-width: 1280px; margin: 0 auto; padding: 24px 20px 60px; }
 
 .view { display: none; animation: fadeIn 0.3s ease; }
 .view.active { display: block; }
+.dict-layout > .view { min-width: 0; }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
@@ -307,7 +309,51 @@ main { max-width: 1280px; margin: 0 auto; padding: 24px 20px 60px; }
 .bookmark-btn:hover { transform: scale(1.12); border-color: var(--accent); }
 .bookmark-btn.saved { background: #fef3c7; border-color: var(--accent); }
 
+.focus-btn, .focus-save-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.focus-btn:hover, .focus-save-btn:hover { transform: scale(1.12); border-color: var(--primary); }
+.focus-btn.focused { background: var(--primary-light); border-color: var(--primary); }
+.focus-save-btn.saved { background: #fef3c7; border-color: var(--accent); }
+
 .word-subs { padding: 0 18px 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+
+.focus-sub-actions { display: inline-flex; gap: 3px; align-items: center; margin-inline-start: 3px; }
+.focus-sub-actions button { width: 26px; height: 26px; font-size: 13px; }
+.focus-sub-actions .focus-save-btn, .focus-sub-actions .focus-btn { border-radius: 50%; }
+.focus-card-actions { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.learned-btn { border: 1px solid #86efac; background: #f0fdf4; color: #166534; border-radius: var(--radius-sm); padding: 8px 10px; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; }
+.learned-btn:hover { background: #dcfce7; }
+.focus-hint { max-width: 900px; margin: 0 auto 16px; }
+
+.training-hero { max-width: 900px; margin: 0 auto 22px; padding: 30px 28px; border-radius: var(--radius); background: linear-gradient(135deg, #172554, #3730a3 58%, #4f46e5); color: #fff; box-shadow: 0 16px 34px rgba(49, 46, 129, 0.22); }
+.training-kicker { display: inline-block; margin-bottom: 8px; color: #c7d2fe; font-size: 12px; font-weight: 800; letter-spacing: .4px; }
+.training-hero h2 { font-size: 28px; margin-bottom: 4px; }
+.training-hero p { color: #e0e7ff; font-size: 14px; }
+.training-grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+.training-card { min-height: 150px; padding: 20px; border: 1px solid var(--border); border-radius: var(--radius); background: #fff; color: var(--text); box-shadow: var(--shadow); display: flex; flex-direction: column; align-items: flex-start; gap: 7px; text-align: start; cursor: pointer; font: inherit; transition: transform .2s, box-shadow .2s, border-color .2s; }
+.training-card:hover { transform: translateY(-4px); box-shadow: 0 16px 34px rgba(2, 6, 23, .14); border-color: var(--primary); }
+.training-icon { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; font-size: 24px; background: var(--primary-light); }
+.training-card strong { font-size: 16px; }
+.training-card small { color: var(--text-muted); font-size: 12px; }
+.training-card-violet .training-icon { background: #f5f3ff; }
+.training-card-blue .training-icon { background: #eff6ff; }
+.training-card-rose .training-icon { background: #fff1f2; }
+.training-card-amber .training-icon { background: #fffbeb; }
+.training-card-teal .training-icon { background: #f0fdfa; }
+.training-card-green .training-icon { background: #ecfdf5; }
+.training-card-sky .training-icon { background: #f0f9ff; }
+.training-back-btn { margin: 0 auto 16px 0; display: flex; }
 
 .sub-chip {
   background: var(--bg-card-soft);
@@ -418,6 +464,7 @@ main { max-width: 1280px; margin: 0 auto; padding: 24px 20px 60px; }
   box-shadow: var(--shadow);
   padding: 24px;
   max-width: 760px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -900,6 +947,23 @@ body.modal-open { overflow: hidden; }
 
   /* Prevent iOS zoom-on-focus */
   input, select, textarea { font-size: 16px !important; }
+
+  .training-hero { padding: 22px 18px; margin-bottom: 16px; }
+  .training-hero h2 { font-size: 22px; }
+  .training-hero p { font-size: 13px; line-height: 1.7; }
+  .training-grid { grid-template-columns: 1fr; gap: 10px; }
+  .training-card { min-height: 104px; padding: 15px; display: grid; grid-template-columns: 48px 1fr; grid-template-rows: auto auto; column-gap: 12px; align-items: center; }
+  .training-card .training-icon { grid-row: 1 / span 2; }
+  .training-card strong, .training-card small { align-self: end; }
+  .training-card small { align-self: start; }
+  .training-back-btn { width: 100%; justify-content: center; margin: 0 0 14px; }
+  .focus-card .word-card-head { flex-wrap: wrap; }
+  .focus-card .word-main { flex-basis: 100%; }
+  .focus-card-actions { width: 100%; justify-content: flex-start; flex-wrap: wrap; }
+  .focus-card-actions .learned-btn { flex: 1 1 150px; }
+  .fc-controls { flex-wrap: wrap; }
+  .fc-controls .btn { min-width: 110px; }
+  .matching-status #btn-matching-finish { width: 100%; margin-inline-start: 0; justify-content: center; }
 }
 
 @media (max-width: 480px) {
